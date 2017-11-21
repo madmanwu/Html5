@@ -1,0 +1,123 @@
+body
+  font-size: 0.12rem
+  position: absolute
+  top: 0
+  bottom: 0
+  width: 100%
+  display: flex
+  flex-direction: column
+header
+  text-align: center
+  padding-top: 0.11rem
+  padding-bottom: 0.11rem
+  position: relative
+  i
+    position: absolute
+    left: 0.15rem
+    top: 0.11rem
+  .left
+    font-size: 0.16rem
+section
+  background: #ff4a51
+  overflow-y: auto
+  flex: 1
+  .top
+    background: url("../images/imgs/pin1.jpg")
+    width: 100%
+    height: 1.25rem
+    background-repeat: no-repeat
+    background-size: 100% 100%
+    position: relative
+    button
+      width: 1.12rem
+      height: 0.31rem
+      border: 0.01rem solid #666666
+      background: #ffea23
+      text-align: center
+      line-height: 0.31rem
+      color: #f60026
+      font-size: 0.16rem
+      border-radius: 0.04rem
+      right: 0.35rem
+      bottom: 0.22rem
+      position: absolute
+  .box
+    padding-left: 0.14rem
+    padding-right: 0.14rem
+    height: 100%
+    margin-top: 0.4rem
+    .bottom
+      background: #ffffff
+      box-sizing: border-box
+      width: 100%
+      height: 100%
+      border: 0.02rem solid #000000
+      border-radius: 0.15rem
+      flex-direction: column
+      align-items: center
+      display: flex
+      padding-left: 0.11rem
+      padding-right: 0.11rem
+      .title
+        p
+          margin-top: 0.14rem
+          color: #ff4a51
+          font-size: 0.18rem
+          span
+            font-size: 0.22rem
+            color: #ffea23
+      .img
+        margin-top: 0.25rem
+        display: flex
+        justify-content: space-between
+        & > span
+          width: 0.24rem
+          height: 0.24rem
+          display: inline-block
+          border: 0.01rem solid #000000
+          border-radius: 50%
+          background: #ffea23
+          text-align: center
+          line-height: 0.24rem
+        & > p
+          width: 50%
+          padding-left: 0.06rem
+          padding-right: 0.08rem
+          & > .tpp
+            font-weight: bold
+            font-size: 0.14rem
+            i
+              color: #f8274d
+          & > .last
+            color: #f8274d
+        & > div
+          width: 0.98rem
+          height: 0.98rem
+          position: relative
+          img
+            width: 100%
+            height: 100%
+          p
+            border-radius: 0.05rem
+            border: 0.01rem solid #000000
+            width: 100%
+            background: #ffea23
+            position: absolute
+            bottom: 0
+            left: 0
+            padding-left: 0.06rem
+      .btns
+        margin-top: 0.11rem
+        padding-left: 0.69rem
+        padding-right: 0.69rem
+        background: #f8274d
+        border-radius: 0.05rem
+        font-size: 0.14rem
+        .btn
+          width: 100%
+          border: none
+          outline: none
+          background: #f8274d
+          height: 0.33rem
+          color: #ffffff
+

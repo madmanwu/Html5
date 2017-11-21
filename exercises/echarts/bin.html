@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        div {
+            width: 500px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+<div id="mycharts"></div>
+<script type="text/javascript" src="js/echarts.min.js"></script>
+<script type="text/javascript">
+    var mycharts = document.getElementById("mycharts");
+    var oCharts = echarts.init(mycharts);
+
+    option = {
+    legend: {
+        orient : 'vertical',
+        x : 'left',
+        data:['直接访问','邮件营销','联盟广告','视频广告','搜索引擎']
+    },
+    series : [
+        {
+            name:'访问来源',
+            type:'pie',
+            radius : '55%',
+            center: ['50%', '60%'],
+            data:[
+                {value:335, name:'直接访问'},
+                {value:310, name:'邮件营销'},
+                {value:234, name:'联盟广告'},
+                {value:135, name:'视频广告'},
+                {value:1548, name:'搜索引擎'}
+            ]
+        }
+    ]
+};
+oCharts.setOption(option);                    
+</script>
+</body>
+</html>

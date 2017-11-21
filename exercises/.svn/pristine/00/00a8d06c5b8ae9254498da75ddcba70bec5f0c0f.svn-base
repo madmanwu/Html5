@@ -1,0 +1,38 @@
+body
+  font-size: 0.12rem
+  position: absolute
+  top: 0
+  bottom: 0
+  width: 100%
+  display: flex
+  flex-direction: column
+header
+  display: flex
+  justify-content: space-between
+  padding: 0.14rem 0.08rem
+  background: pink
+  .name
+    font-size: 0.14rem
+section
+  flex: 1
+  overflow-y: auto
+  .banner
+    height: 100%
+    background: #cccccc
+    .swiper-slide
+      color: #ffffff
+      height: 100%
+      overflow: hidden
+      display: flex
+      justify-content: center
+      align-items: center
+      font-size: 1rem
+
+footer
+  .list
+    display: flex
+    background: hotpink
+    li
+      flex: 1
+      padding: 0.14rem 0.08rem
+

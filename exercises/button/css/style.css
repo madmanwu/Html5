@@ -1,0 +1,107 @@
+body {
+  font-size: 12px; }
+
+.toggle > input[type='radio'], .toggle > input[type='checkbox'] {
+  display: none; }
+
+.toggle-radio .track,
+.toggle-checkbox-radius .track {
+  border-radius: 100% !important; }
+
+.toggle-square .track {
+  border-radius: 3px !important; }
+
+.toggle-radio,
+.toggle-checkbox,
+.toggle-switch {
+  display: inline-block; }
+  .toggle-radio > input:checked + .track .icon,
+  .toggle-checkbox > input:checked + .track .icon,
+  .toggle-switch > input:checked + .track .icon {
+    display: block; }
+  .toggle-radio .track,
+  .toggle-checkbox .track,
+  .toggle-switch .track {
+    width: 25px;
+    height: 25px;
+    overflow: hidden;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    position: relative; }
+    .toggle-radio .track .icon,
+    .toggle-checkbox .track .icon,
+    .toggle-switch .track .icon {
+      width: 15px;
+      height: 10px;
+      display: none;
+      border-left: 2px solid #ddd;
+      border-bottom: 2px solid #ddd;
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      box-sizing: border-box;
+      transform: rotate(-45deg); }
+
+.toggle-switch {
+  margin: 3px; }
+  .toggle-switch > input:checked + .track {
+    background-color: #01ff70;
+    border-color: transparent; }
+    .toggle-switch > input:checked + .track .icon {
+      left: 22px;
+      box-shadow: -2px 1px 2px #bbb; }
+  .toggle-switch .track {
+    width: 45px;
+    height: 24px;
+    border-radius: 12px; }
+    .toggle-switch .track .icon {
+      width: 24px;
+      height: 24px;
+      top: 0;
+      left: -1px;
+      display: inline-block;
+      border: 1px solid #ddd;
+      border-radius: 100%;
+      transition: left 0.5s;
+      background-color: #fff;
+      box-shadow: 2px 3px 3px #ddd; }
+
+.toggle-warning.toggle-switch > input:checked + .track .icon,
+.toggle-danger.toggle-switch > input:checked + .track .icon {
+  box-shadow: -2px 1px 2px #666; }
+
+.toggle-success.toggle-checkbox > input:checked + .track .icon,
+.toggle-success.toggle-radio > input:checked + .track .icon,
+.toggle-danger.toggle-checkbox > input:checked + .track .icon,
+.toggle-danger.toggle-radio > input:checked + .track .icon,
+.toggle-warning.toggle-checkbox > input:checked + .track .icon,
+.toggle-warning.toggle-radio > input:checked + .track .icon {
+  border-color: #fff; }
+
+.toggle-success.toggle-checkbox > input:checked + .track, .toggle-success.toggle-radio > input:checked + .track {
+  background-color: #01ff70; }
+
+.toggle-danger.toggle-switch > input:checked + .track, .toggle-danger.toggle-checkbox > input:checked + .track, .toggle-danger.toggle-radio > input:checked + .track {
+  background-color: darkred; }
+
+.toggle-warning.toggle-switch > input:checked + .track, .toggle-warning.toggle-checkbox > input:checked + .track, .toggle-warning.toggle-radio > input:checked + .track {
+  background-color: orangered; }
+
+.toggle-small .track {
+  width: 20px;
+  height: 20px; }
+  .toggle-small .track .icon {
+    width: 12px;
+    height: 6px; }
+
+.toggle-large .track {
+  width: 35px;
+  height: 35px; }
+  .toggle-large .track .icon {
+    width: 20px;
+    height: 12px;
+    left: 8px;
+    top: 8px; }
+
+/*# sourceMappingURL=style.css.map */

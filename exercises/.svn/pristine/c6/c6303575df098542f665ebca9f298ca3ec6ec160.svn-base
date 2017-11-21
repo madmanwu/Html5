@@ -1,0 +1,165 @@
+body {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  font-size: 0.14rem;
+  display: flex;
+  flex-direction: column;
+  background: #f6f6f6; }
+
+header {
+  padding: 0.09rem;
+  display: -webkit-flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff; }
+
+section {
+  overflow-y: auto;
+  flex: 1; }
+  section .logon {
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #846c7f; }
+    section .logon .top {
+      padding: 0.14rem 1.18rem;
+      text-align: center; }
+      section .logon .top button {
+        border-width: 0;
+        background: #ffffff;
+        width: 40%;
+        min-width: 0.83rem;
+        height: 0.28rem;
+        border-radius: 0.03rem;
+        outline: none;
+        color: #fa529f; }
+    section .logon .middle {
+      text-align: center;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+      font-size: 0.12rem; }
+      section .logon .middle button {
+        border-width: 0;
+        color: #dbc9cc;
+        background: rgba(255, 255, 255, 0.3);
+        width: 0.62rem;
+        height: 0.19rem;
+        border-radius: 0.08rem;
+        text-align: center;
+        line-height: 0.19rem; }
+    section .logon .last {
+      margin-top: 0.19rem;
+      display: flex;
+      background: rgba(255, 255, 255, 0.1); }
+      section .logon .last p {
+        padding-top: 0.03rem;
+        padding-bottom: 0.03rem;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        section .logon .last p span {
+          margin-top: 0.03rem; }
+      section .logon .last .left {
+        border-right: 0.01rem solid #dbc9cc; }
+  section .over {
+    margin-top: 0.03rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.11rem 0.09rem;
+    background: #ffffff;
+    margin-bottom: 0.02rem; }
+    section .over p {
+      color: #a0a0a0; }
+  section .list {
+    background: #ffffff;
+    display: flex;
+    margin-bottom: 0.04rem; }
+    section .list li {
+      padding-top: 0.1rem;
+      padding-bottom: 0.08rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex: 1; }
+      section .list li span {
+        margin-top: 0.07rem; }
+  section .main {
+    display: flex;
+    padding-bottom: 0.09rem;
+    background: #ffffff;
+    flex-wrap: wrap;
+    margin-bottom: 0.03rem; }
+    section .main li {
+      font-size: 0.1rem;
+      margin-top: 0.14rem;
+      width: 25%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+      section .main li span {
+        margin-top: 0.06rem; }
+      section .main li p {
+        border-radius: 0.03rem;
+        width: 0.3rem;
+        height: 0.3rem;
+        text-align: center;
+        line-height: 0.3rem; }
+        section .main li p i {
+          color: #ffffff; }
+  section .phone {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.1rem 0.08rem;
+    background: #ffffff;
+    margin-bottom: 0.02rem; }
+    section .phone i {
+      color: #a0a0a0; }
+  section .number {
+    margin-bottom: 0.04rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.1rem 0.08rem;
+    background: #ffffff; }
+    section .number p {
+      color: #fa66aa; }
+    section .number i {
+      margin-left: 0.04rem;
+      color: #a0a0a0; }
+  section .banner {
+    margin-bottom: 0.02rem; }
+    section .banner .swiper-slide {
+      height: 1.05rem; }
+      section .banner .swiper-slide img {
+        width: 100%;
+        height: 100%; }
+
+footer {
+  background: #fff; }
+  footer ul {
+    display: flex;
+    border-top: 0.01rem solid #CCCCCC; }
+    footer ul li {
+      flex: 1;
+      padding-top: 0.06rem;
+      padding-bottom: 0.06rem; }
+      footer ul li a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; }
+      footer ul li .begin {
+        color: #fa529f; }
+        footer ul li .begin i {
+          font-size: 0.16rem; }
+        footer ul li .begin span {
+          margin-top: 0.04rem;
+          font-size: 0.12rem; }
+
+/*# sourceMappingURL=me.css.map */

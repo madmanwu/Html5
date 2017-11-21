@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width,initial-scale=2,maximum-scale=1,user-scalable=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="css/reset.css">
+    <link type="text/css" rel="stylesheet" href="css/common.css">
+    <link type="text/css" rel="stylesheet" href="css/swiper.min.css">
+    <link type="text/css" rel="stylesheet" href="css/animation.css">
+    <link type="text/css" rel="stylesheet" href="css/shopping.css">
+</head>
+<body>
+<header class="header">
+    <h1>购物车</h1>
+
+    <div class="head-right">
+        <span>编辑</span>
+        <i class="fa fa-comment-o"></i>
+    </div>
+</header>
+<div class="content">
+    <div class="cont-list">
+        <div class="list-title">
+            <div class="title-left">
+                <i class="fa fa-cloud"></i>
+
+                <p>含香惑香水馆</p>
+                <i class="fa fa-angle-right f20"></i>
+            </div>
+            <div class="title-right">
+                <span class="pr10">领劵</span>|
+                <span>编辑</span>
+            </div>
+        </div>
+        <div class="list-mid">
+            <div class="but-wrap">
+                <input type="checkbox" class="check check-box" id="check">
+                <label for="check">
+                    <span class="cked">√</span>
+                </label>
+            </div>
+            <div class="img-wrap">
+                <img src="images/photos/box.png" alt="">
+            </div>
+            <div class="infor-wrap">
+                <h4>
+                    正品女士香水持久清新香气自然淡香法国邂逅喷雾学生礼物
+                </h4>
+
+                <p>绿色邂逅（清新）；60mL</p>
+
+                <div class="infor">
+                    <div class="infor-left">
+                        ¥<span class="price text-dark-orange">59.6</span>
+                        <del>¥190</del>
+                    </div>
+                    <div class="infor-right">
+                        ×<span>1</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="delprice">
+            <span>满减</span>
+            8.16-8.18满99减5，满199减10，满299减20
+        </div>
+    </div>
+    <div class="cont-list">
+        <div class="list-title">
+            <div class="title-left">
+                <i class="fa fa-cloud"></i>
+
+                <p>含香惑香水馆</p>
+                <i class="fa fa-angle-right f20"></i>
+            </div>
+            <div class="title-right">
+                <span class="pr10">领劵</span>|
+                <span>编辑</span>
+            </div>
+        </div>
+        <div class="list-mid">
+            <div class="but-wrap">
+                <input type="checkbox" class="check check-box" id="check-two">
+                <label for="check-two">
+                    <span class="cked">√</span>
+                </label>
+            </div>
+            <div class="img-wrap">
+                <img src="images/photos/box.png" alt="">
+            </div>
+            <div class="infor-wrap">
+                <h4>
+                    正品女士香水持久清新香气自然淡香法国邂逅喷雾学生礼物
+                </h4>
+
+                <p>绿色邂逅（清新）；60mL</p>
+
+                <div class="infor">
+                    <div class="infor-left">
+                        ¥<span class="price text-dark-orange">59.6</span>
+                        <del>¥190</del>
+                    </div>
+                    <div class="infor-right">
+                        ×<span>1</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="delprice">
+            <span>满减</span>
+            8.16-8.18满99减5，满199减10，满299减20
+        </div>
+    </div>
+    <div class="total-wrap">
+        <div class="but-wrap">
+            <input type="checkbox" class="all" id="all-btn">
+            <label for="all-btn">
+                <span>√</span>
+            </label>
+            全选
+        </div>
+        <div class="total-right">
+            合计：¥<span class="text-dark-orange total-sum">0</span>
+            <small>不含运费</small>
+            <b>结算 (<span class="total-cot">0</span>)</b>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <dl class="col-xs-3">
+        <dt>
+            <i class="glyphicon glyphicon-home"></i>
+        </dt>
+        <dd>
+            首页
+        </dd>
+    </dl>
+    <dl class="col-xs-3">
+        <dt>
+            <i class="glyphicon glyphicon-cloud"></i>
+        </dt>
+        <dd>
+            微淘
+        </dd>
+    </dl>
+    <dl class="col-xs-3">
+        <dt>
+            <i class="fa fa-car"></i>
+        </dt>
+        <dd>
+            购物车
+        </dd>
+    </dl>
+    <dl class="col-xs-3">
+        <dt>
+            <i class="glyphicon glyphicon-user"></i>
+        </dt>
+        <dd>
+            我的淘宝
+        </dd>
+    </dl>
+</footer>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/event.js"></script>
+<script type="text/javascript" src="js/dialog.js"></script>
+<script type="text/javascript">
+    $(".title-right").on("click", "span", function () {
+        var text = $.trim($(this).text());
+        var that = $(this);
+        if (text == "编辑") {
+            var newNum = $(this).parents(".cont-list").find(".infor-right span").text() * 1;
+            var str = "<div class='btns'>" +
+                    "<span class='sub'>－</span>" +
+                    "<span class='amount'>" + newNum + "</span>" +
+                    "<span class='plus'>＋</span>" +
+                    "</div>" +
+                    "<div class='del-btn'>" +
+                    "删除" +
+                    "</div>";
+            $(this).parents(".cont-list").find(".infor-wrap").hide(function () {
+                $("<div class='infor-container'>" + str + "</div>").insertAfter($(this));
+            });
+            $(this).parent().html("<span>完成</span>");
+        } else if (text == "完成") {
+            var texNum = $(this).parents(".cont-list").find(".btns .amount").text() * 1;
+            $(this).parents(".cont-list").find(".infor-container").remove();
+            $(this).parents(".cont-list").find(".infor-wrap").show(function () {
+                $(this).find(".infor-right span").text(texNum);
+                that.parent().html("<span class='pr10'>领劵</span>|<span>编辑</span>");
+            });
+        }
+    });
+    $(".cont-list").each(function (i, val) {
+        $(val).find(".but-wrap .cked").on("click", function () {
+            $(this).parents(".but-wrap").toggleClass("active");
+            if (!$(val).find(".check-box").prop("checked")) {
+                var amount = $(val).find(".btns .amount").text() * 1;
+                $(val).on("click", ".btns span", function () {
+                    if ($(this).hasClass("sub")) {
+                        amount--;
+                        if (amount < 0) {
+                            amount = 0;
+                        }
+                    } else if ($(this).hasClass("plus")) {
+                        amount++;
+                    }
+                    $(val).find(".btns .amount").text(amount);
+                    allCount();
+                });
+                $(val).on("click", ".del-btn", function () {
+                    var that = $(this);
+                    $(this).dialog({
+                        width: "200px",
+                        height: "100px",
+                        titles: "确定要删除吗？",
+                        content: "are you sure?",
+                        btns: ["确认", "取消"],
+                        anima: "fadeIn",
+                        success: function () {
+                            that.parents(".list-mid").remove();
+                        }
+                    });
+                })
+            }
+        });
+    });
+    $(".total-wrap").on("click",".but-wrap span",function(){
+        $(this).parents(".but-wrap").toggleClass("active");
+        var allBool = !$(this).parent().prev().prop("checked");
+        $(".cont-list input").each(function(i,val){
+            if(allBool){
+                $(this).parents(".but-wrap").addClass("active");
+            }else{
+                $(this).parents(".but-wrap").removeClass("active");
+            }
+            $(val).prop("checked",allBool);
+        })
+    });
+    function allCount() {
+        var allSum = 0;
+        var allCot = 0;
+        $(".cont-list").each(function (i, val) {
+            if ($(val).find(".check-box").prop("checked")) {
+                var everyCot = $(val).find(".btns .amount").text() * 1;
+                var everyPri = $(val).find(".infor .price").text() * 1;
+                var everySum = everyCot * everyPri;
+                allSum += everySum;
+                allCot += everyCot;
+                $(".total-wrap").find(".total-sum").text(allSum.toFixed(2));
+                $(".total-wrap").find(".total-cot").text(allCot.toFixed(0));
+            }
+        })
+    }
+</script>
+</body>
+</html>

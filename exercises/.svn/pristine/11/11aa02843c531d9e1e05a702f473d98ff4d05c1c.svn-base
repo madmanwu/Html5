@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,CAAC;EACC,UAAU,EAAE,UAAU;;AACxB,IAAI;EACF,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;;AACd,IAAI;EACF,SAAS,EAAE,OAAM",
+"sources": ["../../../../../%E5%BC%A0%E8%B4%BA%E6%9D%B0/Desktop/h5/dialog/css/dialog.sass"],
+"names": [],
+"file": "dialog.css"
+}

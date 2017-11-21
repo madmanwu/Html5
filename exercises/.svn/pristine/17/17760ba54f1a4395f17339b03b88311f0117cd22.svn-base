@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <link type="text/css" rel="stylesheet" href="css/swiper.min.css"/>
+    <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link type="text/css" rel="stylesheet" href="css/common.css"/>
+    <link type="text/css" rel="stylesheet" href="css/reset.css"/>
+    <link type="text/css" rel="stylesheet" href="css/play.css"/>
+</head>
+<body>
+<header>
+    <div class="on">
+        <p class="left"><i class="fa fa-angle-left"></i>返回</p>
+        <p>我的资料</p>
+        <i class="fa fa-ellipsis-h right"></i>
+    </div>
+</header>
+<section>
+    <p>您正在办理的是</p>
+    <div class="picture">
+        <p class="title">
+            <span>美国EB-5项目</span><span>准备打投资款<i class="fa fa-angle-right"></i></span>
+        </p>
+        <p class="img">
+            <img src="images/upload/up3.jpg" alt=""/>
+        </p>
+    </div>
+
+    <div class="date">
+        <div>
+            <span class="circle"><i class="fa fa-transgender"></i></span>
+            <p><span>签约日期</span><span class="time">2016年7月20日</span></p>
+            <p class="man">负责人:Alice</p>
+        </div>
+
+        <div>
+            <span class="circle dot"></span>
+            <p><span>准备材料</span><span class="time">2016年8月20日</span></p>
+            <p class="man">您已完成准备材料</p>
+        </div>
+        <div>
+            <span class="circle dot"></span>
+            <p><span>三方费用缴纳</span><span class="time">2016年9月20日</span></p>
+            <p class="man">您已完成准备材料</p>
+        </div>
+        <div class="datum">
+            <span class="circle hollow"><i class="fa fa-eercast"></i></span>
+            <p><span>基本资料准备</span><span>所需材料       <i class="fa fa-angle-right"></i></span></p>
+            <p class="man">描述性文字</p>
+        </div>
+        <div class="datum">
+            <span class="circle white"></span>
+            <p><span>资料审核</span></p>
+            <p class="man">将您的材料递交移民局</p>
+        </div>
+    </div>
+    <div class="refer">
+        <p>
+            <i class="fa fa-sliders"></i>
+            <span>进度查询</span>
+        </p>
+    </div>
+</section>
+</body>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript" src="js/zepto.js"></script>
+<script type="text/javascript" src="js/event.js"></script>
+<script type="text/javascript" src="js/ajax.js"></script>
+<script type="text/javascript">
+    $(".left").on("click", function(){
+        location.href = "plan.html";
+    })
+</script>
+</html>

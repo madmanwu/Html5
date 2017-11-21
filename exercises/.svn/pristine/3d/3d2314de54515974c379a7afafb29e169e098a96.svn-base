@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <link type="text/css" rel="stylesheet" href="css/swiper.min.css"/>
+    <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link type="text/css" rel="stylesheet" href="css/common.css"/>
+    <link type="text/css" rel="stylesheet" href="css/reset.css"/>
+    <link type="text/css" rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<header>
+    <span>鹿晗</span>
+    <span class="name">迪丽热巴</span>
+    <span>鹿晗</span>
+</header>
+<section>
+    <div class="banner swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background: #666">
+                邓超
+            </div>
+            <div class="swiper-slide" style="background: green">
+                陈赫
+            </div>
+            <div class="swiper-slide" style="background: pink">
+                郑凯
+            </div>
+            <div class="swiper-slide" style="background: blue">
+                李晨
+            </div>
+            <div class="swiper-slide" style="background: mediumvioletred">
+                王祖蓝
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <ul class="list">
+        <li>
+            <span>奔跑吧</span>
+        </li>
+        <li>
+            <span>奔跑吧</span>
+        </li>
+        <li>
+            <span>奔跑吧</span>
+        </li>
+        <li>
+            <span>奔跑吧</span>
+        </li>
+        <li>
+            <span>奔跑吧</span>
+        </li>
+    </ul>
+</footer>
+
+</body>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript" src="js/zepto.js"></script>
+<script type="text/javascript" src="js/event.js"></script>
+<script type="text/javascript" src="js/ajax.js"></script>
+<script type="text/javascript">
+    var mySwiper = new Swiper(".banner");
+    $(".list").on("click", "li", function(){
+        var i = $(this).index();
+        slideTo(i);
+    });
+    function slideTo(index){
+        mySwiper.slideTo(index);
+    };
+</script>
+</html>

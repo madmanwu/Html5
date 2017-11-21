@@ -1,0 +1,83 @@
+body {
+  font-size: 0.12rem;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  position: absolute; }
+
+header {
+  z-index: 99999;
+  text-align: center;
+  font-size: 0.14rem;
+  color: #ffffff;
+  background: #323136;
+  padding-top: 0.09rem;
+  padding-bottom: 0.09rem; }
+  header h4 {
+    display: inline; }
+  header span {
+    position: absolute;
+    left: 0.14rem;
+    display: inline-block;
+    width: 0.21rem;
+    height: 0.21rem;
+    border: 0.01rem solid #ffffff;
+    text-align: center;
+    line-height: 0.21rem;
+    border-radius: 50%; }
+  header .container {
+    margin-top: 0.09rem;
+    margin-bottom: -0.09rem;
+    background: #ffffff;
+    color: #666666;
+    text-align: center; }
+    header .container .list {
+      margin-top: 0.09rem;
+      display: inline-block;
+      text-align: center; }
+      header .container .list li {
+        font-size: 0.14rem;
+        padding-bottom: 0.11rem; }
+      header .container .list .active {
+        border-bottom: 0.02rem solid #33bdad;
+        color: #33bdad; }
+
+section {
+  overflow-y: auto;
+  flex: 1; }
+  section .images #pulldown {
+    background: red;
+    position: absolute;
+    top: -0.4rem;
+    width: 100%;
+    line-height: 0.35rem;
+    text-align: center; }
+  section .images #pullup {
+    line-height: 0.35rem;
+    text-align: center;
+    position: absolute;
+    background: red;
+    bottom: 0;
+    left: 0;
+    width: 100%; }
+  section .images .img {
+    width: 0.91rem;
+    height: 1.43rem;
+    margin-bottom: 0.1rem; }
+    section .images .img img {
+      width: 100%;
+      height: 100%; }
+  section .images .write {
+    color: #666666;
+    margin-bottom: 0.07rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap; }
+  section .images span {
+    color: #42c2b3; }
+    section .images span i {
+      margin-right: 0.04rem; }
+
+/*# sourceMappingURL=style.css.map */

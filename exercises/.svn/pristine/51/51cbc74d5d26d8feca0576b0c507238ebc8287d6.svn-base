@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no,email=no"/>
+    <title></title>
+    <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link type="text/css" rel="stylesheet" href="css/reset.css"/>
+    <link type="text/css" rel="stylesheet" href="css/common.css"/>
+    <link type="text/css" rel="stylesheet" href="css/my.css"/>
+</head>
+<body>
+<header class="header">
+    <h3>我的快方</h3>
+    <i class="fa fa-cog fa-2x"></i>
+    <p>注册/登录</p>
+</header>
+<section class="section">
+    <div class="title">
+        <p class="left">
+            <i class="fa fa-file-text-o"></i>
+            <span>我的订单</span>
+        </p>
+        <p class="right">
+            <i class="fa fa-angle-right rr"></i>
+        </p>
+    </div>
+    <ul class="top">
+        <li>
+            <i class="fa fa-file-text-o"></i>
+            <span>当前订单</span>
+        </li>
+        <li>
+            <i class="fa fa-check-square-o"></i>
+            <span>待付款订单</span>
+        </li>
+        <li>
+            <i class="fa fa-save"></i>
+            <span>已完成订单</span>
+        </li>
+    </ul>
+    <div class="title">
+        <p class="left">
+            <i class="fa fa-user-circle-o"></i>
+            <span>我的服务</span>
+        </p>
+        <p class="right">
+            <i class="fa fa-angle-right rr"></i>
+        </p>
+    </div>
+    <ul class="top">
+        <li>
+            <i class="fa fa-truck"></i>
+            <span>地址管理</span>
+        </li>
+        <li>
+            <i class="fa fa-ticket"></i>
+            <span>优惠券</span>
+        </li>
+        <li>
+            <i class="fa fa-heart"></i>
+            <span>我的消息</span>
+        </li>
+    </ul>
+    <div class="title">
+        <p class="left">
+            <i class="fa fa-snowflake-o"></i>
+            <span>系统服务</span>
+        </p>
+        <p class="right">
+            <i class="fa fa-angle-right rr"></i>
+        </p>
+    </div>
+    <ul class="top">
+        <li>
+            <i class="fa fa-commenting" style="color: #ffb700; font-size: 0.14rem"></i>
+            <span>地址管理</span>
+        </li>
+        <li>
+            <i class="fa fa-map-marker" style="color: #ff7600; font-size: 0.14rem"></i>
+            <span>开通范围</span>
+        </li>
+        <li>
+            <i class="fa fa-gift" style="color: #9377b2; font-size: 0.14rem"></i>
+            <span>推荐有礼</span>
+        </li>
+    </ul>
+    <div class="title">
+        <p class="left">
+            <i class="fa fa-user-circle-o"></i>
+            <span>24小时客服电话</span>
+        </p>
+    </div>
+</section>
+<footer class="footer">
+    <div>
+        <a href="javascript:void(0);">
+            <i class="fa fa-home f18"></i>
+            <span>首页</span>
+        </a>
+    </div>
+    <div>
+        <a href="javascript:void(0);">
+            <i class="fa fa-heartbeat f18"></i>
+            <span>活动</span>
+        </a>
+    </div>
+    <div>
+        <a href="javascript:void(0);">
+            <i class="fa fa-shopping-cart f18"></i>
+            <span>购物车</span>
+        </a>
+    </div>
+    <div>
+        <a href="javascript:void(0);">
+            <i class="fa fa-user f18 bg"></i>
+            <span class="bg">我的</span>
+        </a>
+    </div>
+</footer>
+<script type="text/javascript" src="js/zepto.js"></script>
+<script type="text/javascript" src="js/event.js"></script>
+<script type="text/javascript">
+    $(".footer").on("click","div>a",function(){
+        $(this).find("i").addClass("bg").parent().parent().siblings().find("i").removeClass("bg");
+        $(this).find("span").addClass("bg").parent().parent().siblings().find("span").removeClass("bg");
+    });
+</script>
+</body>
+</html>

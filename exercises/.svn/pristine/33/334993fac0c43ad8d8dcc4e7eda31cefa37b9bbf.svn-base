@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <link type="text/css" rel="stylesheet" href="css/swiper.min.css"/>
+    <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link type="text/css" rel="stylesheet" href="css/common.css"/>
+    <link type="text/css" rel="stylesheet" href="css/reset.css"/>
+    <link type="text/css" rel="stylesheet" href="css/brand.css"/>
+</head>
+<body>
+
+<header>
+    <i class="fa fa-angle-left a clickl"></i>
+    <span>欧丽妈咪品牌专场，满100减100!</span>
+    <i class="fa fa-share-square-o a clickr"></i>
+</header>
+<section>
+    <img src="images/imgs/brand1.jpg" alt=""/>
+    <div class="word">
+        <h3>品牌简介</h3>
+        <p>BRAND TNTRODUCTION</p>
+        <span>坚持服务于魅力“孕”女人为宗旨，全力打造舒适、美观、大方的孕妇服饰；充分将时尚服饰的特点与孕妇的人体优美曲线线条融为一体，竖立孕妇服饰界的独特艺术品位。让每一位“准妈咪”，成为真正意义上的美丽女人，塑造全新时尚，健康的“准妈咪”形象。</span>
+    </div>
+    <div class="hot">
+        <h1>爆款推荐</h1>
+        <p class="shop">全场商品 满199元减100元</p>
+        <span class="heart">韩版孕装 随心搭！！！</span>
+    </div>
+    <div class="picture">
+        <div class="left">
+            <img src="images/imgs/brand2.jpg" alt=""/>
+        </div>
+        <div class="right">
+            <p>HAM EDITION SHOW<br/>STRIPES,OAN DESION LACTATION,ADJUSTABLE <br/>WAISTI,DJUSTABLE WAIST</p>
+            <img src="images/imgs/brand3.jpg" alt=""/>
+        </div>
+    </div>
+    <a><i class="fa fa-angle-up last"></i></a>
+
+</section>
+
+</body>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript" src="js/zepto.js"></script>
+<script type="text/javascript" src="js/event.js"></script>
+<script type="text/javascript" src="js/ajax.js"></script>
+<script type="text/javascript">
+    $(".clickl").on("click", function(){
+        location.href = "";
+    });
+    $(".clickr").on("click", function(){
+        location.href = "";
+    });
+    $("a").on("click", function () {
+        $("body").scrollTop(0);
+    });
+</script>
+</html>

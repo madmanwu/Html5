@@ -1,0 +1,101 @@
+body {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  display: -webkit-flex;
+  font-size: 0.12rem;
+  flex-direction: column; }
+
+header .on {
+  width: 100%;
+  display: flex;
+  height: 0.35rem;
+  background: #1b1b20;
+  font-size: 0.14rem;
+  color: #ffffff;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0.11rem 0.1rem; }
+  header .on .left {
+    width: 0.37rem; }
+    header .on .left i {
+      margin-right: 0.03rem;
+      font-size: 0.16rem; }
+  header .on > .right {
+    width: 0.37rem;
+    text-align: right; }
+
+section {
+  flex: 1;
+  overflow-y: auto; }
+  section .message {
+    width: 100%;
+    display: flex;
+    flex-direction: column; }
+    section .message div {
+      padding-left: 0.11rem;
+      padding-right: 0.11rem;
+      box-sizing: border-box;
+      width: 100%;
+      height: 0.42rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+    section .message .email {
+      border-bottom: 0.01rem solid #CCC; }
+      section .message .email p input {
+        border-width: 0;
+        width: 0.65rem;
+        outline: none; }
+      section .message .email p {
+        color: #CCCCCC; }
+        section .message .email p .data {
+          width: auto; }
+    section .message .sex {
+      padding-right: 0.18rem;
+      border-bottom: 0.01rem solid #CCC; }
+    section .message p {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      section .message p i {
+        padding-left: 0.08rem; }
+    section .message .subject {
+      width: 100%;
+      display: flex;
+      height: 0.5rem;
+      border-bottom: 0.01rem solid #CCC; }
+      section .message .subject img {
+        width: 0.39rem;
+        height: 0.39rem;
+        border-radius: 50%; }
+    section .message .family {
+      border-bottom: 0.01rem solid #CCC; }
+    section .message .cold {
+      border-bottom: 0.01rem solid #CCC; }
+
+footer {
+  width: 100%; }
+  footer ul {
+    width: 100%;
+    background: #FFF;
+    height: 0.41rem;
+    display: flex;
+    border-top: 0.01rem solid #ededed;
+    justify-content: center;
+    align-items: center; }
+    footer ul li {
+      padding-top: 0.05rem;
+      padding-bottom: 0.05rem;
+      flex: 1; }
+      footer ul li a {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+      footer ul li .active {
+        color: #138bf0; }
+
+/*# sourceMappingURL=my.css.map */

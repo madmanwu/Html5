@@ -1,0 +1,44 @@
+body {
+  font-size: 0.12rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  display: -webkit-flex;
+  -webkit-flex-direction: column; }
+
+.header {
+  height: 0.47rem;
+  line-height: 0.47rem;
+  background: #c80a0f;
+  position: relative;
+  text-align: center;
+  color: #fff; }
+  .header > i {
+    position: absolute;
+    top: 10px;
+    left: 10px; }
+  .header > h3 {
+    font-weight: normal; }
+
+.section {
+  -webkit-flex: 1; }
+
+.footer {
+  height: 0.47rem;
+  display: -webkit-flex;
+  border-top: 1px solid #ccc; }
+  .footer > div {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    box-sizing: border-box;
+    width: 25%;
+    text-align: center; }
+    .footer > div > a {
+      color: #828282; }
+      .footer > div > a > span {
+        display: block; }
+    .footer > div .bg {
+      color: #ff3133; }
+
+/*# sourceMappingURL=comment.css.map */

@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #myCanvas {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            border: 1px solid #666;
+        }
+    </style>
+</head>
+<body>
+<canvas id="myCanvas" width="500" height="300">
+
+</canvas>
+</body>
+<script type="text/javascript">
+    var oCanvas = document.getElementById("myCanvas");
+    var oContext = oCanvas.getContext("2d");
+    var data = {
+        x: ['1月', '2月', '3月', '4月', '5月', '6月'],
+        y: [0, 200, 400, 600, 800, 1000],
+        val: [123, 568, 987, 678, 389, 80],
+        col: ['#FF0000', '#FF7F00', '#FFFF00', '#00FF00', '#00FFFF ', '#0000FF']
+    };
+    function drawnLine(starX, starY, endX, endY) {
+        oContext.beginPath();
+        oContext.moveTo(starX, starY);
+        oContext.lineTo(endX, endY);
+        oContext.stroke();
+    }
+    drawnLine(30, 30, 30, 260);
+    drawnLine(30, 260, 460, 260);
+    drawnRect();
+    function drawnRect() {
+        for (var i = 0; i < data.val.length; i++) {
+            oContext.beginPath();
+            oContext.lineWidth = '30';
+            oContext.strokeStyle = data.col[i];
+            oContext.moveTo(100 + 50 * i, 260 - data.val[i] * 0.2);
+            oContext.lineTo(100 + 50 * i, 260);
+            oContext.stroke();
+            oContext.fillText(data.x[i], 90 + 50 * i, 280);
+        }
+    }
+    function scale() {
+        for (var i = 0; i < data.y.length; i++) {
+            oContext.textAlign = "right";
+            oContext.fillText(data.y[i], 25, 260 - data.y[i]*0.2);
+            oContext.stroke();
+        }
+    }
+    scale();
+</script>
+</html>

@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <link type="text/css" rel="stylesheet" href="css/swiper.min.css"/>
+    <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link type="text/css" rel="stylesheet" href="css/common.css"/>
+    <link type="text/css" rel="stylesheet" href="css/reset.css"/>
+    <link type="text/css" rel="stylesheet" href="css/pintuan.css"/>
+</head>
+<body>
+
+<header>
+    <p>
+        <i class="fa fa-search sea"></i>
+        <input type="text" placeholder="巴拉巴拉 满199减30"/>
+    </p>
+    <i class="fa fa-commenting-o sea"></i>
+</header>
+<section>
+    <ul class="list">
+        <li class="active">首页</li>
+        <li class="first">孕婴</li>
+        <li>童装</li>
+        <li class="first">玩具</li>
+        <li>美妆</li>
+        <li class="first">美食</li>
+    </ul>
+    <div class="images">
+        <p class="top"><span>5</span>周年·万人提前团</p>
+        <p class="tops">包邮包税 低到尖叫<button>GO <i class="fa fa-angle-right"></i></button></p>
+    </div>
+    <ul class="nav">
+        <li>
+            <span>团疯了</span>
+            <img src="images/imgs/honey2.jpg" alt=""/>
+            <h3>五羊洗衣液</h3>
+            <p>1.2L+500ml*4送洗衣皂</p>
+            <div>
+                <p><span class="four">49</span><span class="yuan">元</span>179元</p>
+                <span>去拼团</span>
+            </div>
+        </li>
+        <li class="three">
+            <span>团疯了</span>
+            <img src="images/imgs/honey3.jpg" alt=""/>
+            <h3>海尔Haier</h3>
+            <p>电子60秒测温体温计</p>
+            <div>
+                <p><span>18.8</span><span>元</span>29元</p>
+                <span>去拼团</span>
+            </div>
+        </li>
+        <li>
+            <span>团疯了</span>
+            <img src="images/imgs/honey4.jpg" alt=""/>
+            <h3>韩国爱丽小屋</h3>
+            <p>自动旋转眉笔</p>
+            <div>
+                <p><span>19</span><span>元</span>29元</p>
+                <span>去拼团</span>
+            </div>
+        </li>
+    </ul>
+    <ul class="nav">
+        <li>
+            <span>团疯了</span>
+            <img src="images/imgs/honey5.jpg" alt=""/>
+            <h3>皇儿</h3>
+            <p>婴儿多功能学步车</p>
+            <div>
+                <p><span class="four">59</span><span class="yuan">元</span>1189元</p>
+                <span>去拼团</span>
+            </div>
+        </li>
+        <li class="three">
+            <span>团疯了</span>
+            <img src="images/imgs/honey6.jpg" alt=""/>
+            <h3>安儿欣</h3>
+            <p>PP吸管杯240ml</p>
+            <div>
+                <p><span>28</span><span>元</span>33元</p>
+                <span>去拼团</span>
+            </div>
+        </li>
+        <li class="bottom">
+            <div>
+                <span>更多拼包</span>
+                <span>包邮包税</span>
+                <span class="xian"></span>
+                <span class="quan"><i class="fa fa-angle-right"></i></span>
+            </div>
+        </li>
+    </ul>
+    <div class="box"></div>
+    <div class="wrap">
+        <img src="images/imgs/honey7.jpg" alt=""/>
+        <p class="top"><span>5</span>周年·万人提前团</p>
+        <img src="images/imgs/honey8.jpg" alt=""/>
+    </div>
+</section>
+<footer>
+    <ul class="foot">
+        <li>
+            <a href="javascript:;" class="begin">
+                <i class="fa fa-home"></i>
+                <span>首页</span>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;">
+                <i class="fa fa-transgender-alt"></i>
+                <span>找尖货</span>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;">
+                <i class="fa fa-life-ring"></i>
+                <span>蜜芽圈</span>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;">
+                <i class="fa fa-cart-arrow-down"></i>
+                <span>购物车</span>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;">
+                <i class="fa fa-user-o"></i>
+                <span>我的</span>
+            </a>
+        </li>
+    </ul>
+</footer>
+</footer>
+</body>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript" src="js/zepto.js"></script>
+<script type="text/javascript" src="js/event.js"></script>
+<script type="text/javascript" src="js/ajax.js"></script>
+<script type="text/javascript">
+    $(".list").on("click", "li", function () {
+        $(this).addClass("active").siblings().removeClass("active");
+    });
+    $(".foot").on("click", "a", function () {
+        $(this).addClass("begin").parent().siblings().find("a").removeClass("begin");
+    });
+</script>
+</html>

@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <link type="text/css" rel="stylesheet" href="css/swiper.min.css"/>
+    <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link type="text/css" rel="stylesheet" href="css/common.css"/>
+    <link type="text/css" rel="stylesheet" href="css/reset.css"/>
+    <link type="text/css" rel="stylesheet" href="css/me.css"/>
+</head>
+<body>
+<header>
+    <i class="fa fa-cog"></i>
+    <span>我</span>
+    <i class="fa fa-wpexplorer"></i>
+</header>
+<section>
+    <div class="logon">
+        <p class="top"><button>登录</button></p>
+        <p class="middle">用蜜芽，找到全世界的育儿神器。 <button>去注册 <i class="fa fa fa-angle-right"></i></button></p>
+        <div class="last">
+            <p class="left">
+                <i class="fa fa-star-o"></i>
+                <span>我的收藏</span>
+            </p>
+            <p>
+                <i class="fa fa-smile-o"></i>
+                <span>浏览记录</span>
+            </p>
+        </div>
+    </div>
+    <div class="over">
+        <span>我的订单</span>
+        <p>查看全部订单 <i class="fa fa-angle-right"></i></p>
+    </div>
+    <ul class="list">
+        <li>
+            <i class="fa fa-file-video-o"></i>
+            <span>带付款</span>
+        </li>
+        <li>
+            <i class="fa fa-credit-card"></i>
+            <span>带发货</span>
+        </li>
+        <li>
+            <i class="fa fa-gift"></i>
+            <span>带收货</span>
+        </li>
+        <li>
+            <i class="fa fa-cogs"></i>
+            <span>带评价</span>
+        </li>
+        <li>
+            <i class="fa fa-send-o (alias)"></i>
+            <span>退货/退款</span>
+        </li>
+    </ul>
+    <ul class="main">
+        <li>
+            <p style="background: #fabf00"><i class="fa fa-address-card-o"></i></p>
+            <span>优惠券</span>
+        </li>
+        <li>
+            <p style="background: #67ddab"><i class="fa fa-meetup"></i></p>
+            <span>余额</span>
+        </li>
+        <li>
+            <p style="background: #ffa391"><i class="fa fa-microchip"></i></p>
+            <span>红包</span>
+        </li>
+        <li>
+            <p style="background: #ff7070"><i class="fa fa-bath"></i></p>
+            <span>我的拼图</span>
+        </li>
+        <li>
+            <p style="background: #ffa391"><i class="fa fa-heart"></i></p>
+            <span>图片</span>
+        </li>
+        <li>
+            <p style="background: #e4b576"><i class="fa fa-snowflake-o"></i></p>
+            <span>会员中心</span>
+        </li>
+        <li>
+            <p style="background: #7ecef4"><i class="fa fa-heart"></i></p>
+            <span>关注</span>
+        </li>
+        <li>
+            <p style="background: #67ddab"><i class="fa fa-bicycle"></i></p>
+            <span>粉丝</span>
+        </li>
+    </ul>
+    <div class="phone">
+        <span>在线客服</span>
+        <i class="fa fa-angle-right"></i>
+    </div>
+    <div class="number">
+        <span>客服电话</span>
+        <p>400-789-2000<i class="fa fa-angle-right"></i></p>
+    </div>
+    <div class="banner swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="images/banner/img0.jpg" alt=""/>
+            </div>
+            <div class="swiper-slide">
+                <img src="images/banner/img.jpg" alt=""/>
+            </div>
+            <div class="swiper-slide">
+                <img src="images/banner/img1.jpg" alt=""/>
+            </div>
+            <div class="swiper-slide">
+                <img src="images/banner/img2.jpg" alt=""/>
+            </div>
+        </div>
+
+    </div>
+</section>
+<footer>
+    <ul class="foot">
+        <li>
+            <a href="javascript:;">
+                <i class="fa fa-home"></i>
+                <span>首页</span>
+            </a>
+        </li>
+        <li>
+            <a href="inde.html">
+                <i class="fa fa-transgender-alt"></i>
+                <span>找尖货</span>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;">
+                <i class="fa fa-life-ring"></i>
+                <span>蜜芽圈</span>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;">
+                <i class="fa fa-cart-arrow-down"></i>
+                <span>购物车</span>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;" class="begin">
+                <i class="fa fa-user-o"></i>
+                <span>我的</span>
+            </a>
+        </li>
+    </ul>
+</footer>
+
+</body>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript" src="js/zepto.js"></script>
+<script type="text/javascript" src="js/event.js"></script>
+<script type="text/javascript" src="js/ajax.js"></script>
+<script type="text/javascript">
+    var banner = new Swiper(".banner", {
+        loop: true,
+        autoplay: 2500
+    });
+    $(".foot").on("click", "a", function(){
+        $(this).addClass("begin").parent().siblings().find("a").removeClass("begin");
+    })
+</script>
+</html>

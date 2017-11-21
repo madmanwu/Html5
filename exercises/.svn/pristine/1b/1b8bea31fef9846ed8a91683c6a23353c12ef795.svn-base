@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+        div {
+            width: 500px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+	<div id="mycharts"></div>
+</body>
+<script type="text/javascript" src="js/echarts.min.js"></script>
+<script type="text/javascript">
+	var mycharts = document.getElementById("mycharts");
+    var oCharts = echarts.init(mycharts);
+	option = {
+    title : {
+        text: '温度计式图表',
+    },
+    tooltip : {
+        trigger: 'axis',
+        axisPointer : {            // 坐标轴指示器，坐标轴触发有效
+        }
+    },
+    xAxis : [
+        {
+            type : 'category',
+            data : ['吴蔓','刘宁','郭莹莹','赵举科','听','风']
+        }
+    ],
+    yAxis : [
+        {
+            type : 'value',
+            boundaryGap: [0, 0.1]
+        }
+    ],
+    series : [
+        {
+            
+            type:'bar',
+            stack: 'sum',
+            barCategoryGap: '50%',
+            itemStyle: {
+                normal: {
+                    color: 'tomato',
+                    barBorderColor: 'tomato',
+                    barBorderWidth: 6,
+                    barBorderRadius:0,
+                    label : {
+                        show: true, position: 'insideTop'
+                    }
+                }
+            },
+            data:[260, 200, 220, 120, 100, 80]
+        },
+        {
+            type:'bar',
+            stack: 'sum',
+            itemStyle: {
+                normal: {
+                    color: '#fff',
+                    barBorderColor: 'tomato',
+                    barBorderWidth: 6,
+                    barBorderRadius:0,
+                    label : {
+                        show: true, 
+                        position: 'top',
+                        formatter: function (params) {
+                            for (var i = 0, l = option.xAxis[0].data.length; i < l; i++) {
+                                if (option.xAxis[0].data[i] == params.name) {
+                                    return option.series[0].data[i] + params.value;
+                                }
+                            }
+                        },
+                        textStyle: {
+                            color: 'tomato'
+                        }
+                    }
+                }
+            },
+            data:[40, 80, 50, 80,80, 70]
+        }
+    ]
+};
+oCharts.setOption(option);           
+</script>
+</html>

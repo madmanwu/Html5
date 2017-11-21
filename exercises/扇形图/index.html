@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<canvas id='cvs' width='600' height='600' style='background:#333'></canvas>
+	<script>
+		draw('#cvs',getData());
+		function getData(){
+			var json=[];
+			var len=Math.floor(Math.random()*6)+3;
+			for(var i=0;i<len;i++){
+				var obj={};
+				obj.value=Math.floor(Math.random()*100)+10;
+				obj.color=getColor();
+				json.push(obj);
+			}
+			return json;
+		}
+
+		function getColor(){
+			var randColor=Math.round(Math.random()*0xffffff).toString(16);
+			if(randColor.length==6){
+				return '#'+randColor;
+			}else{
+				return getColor();
+			}
+		}
+
+		function draw(cvs,data){
+			var cvs=document.querySelector(cvs);
+			var ctx=cvs.getContext("2d");
+			var sum=0;
+			var deg=Math.PI/100;
+			var total=0;
+			var start=0;
+
+			ctx.translate(cvs.width/2, cvs.height/2);
+			data.forEach(function(obj){
+				total+=obj.value;
+			})
+
+			data.forEach(function(obj){
+				ctx.beginPath();
+				var angle=obj.value/total*360;
+				ctx.fillStyle=obj.color;
+				ctx.lineWidth=1;
+				ctx.moveTo(0, 0);
+				ctx.arc(0,0,200,start*deg,(start+angle)*deg);
+				ctx.closePath();
+				ctx.fill();
+				ctx.stroke();
+				start+=angle;
+			})
+			ctx.beginPath();
+			ctx.fillStyle='#333';
+			ctx.lineWidth=5;
+			ctx.arc(0,0,150,0,360*deg);
+			ctx.fill();
+			ctx.stroke();
+
+			ctx.fillStyle='#fff';
+			ctx.beginPath();
+			ctx.fillText('TOTAL', -20, -10);
+			ctx.beginPath();
+			ctx.font='40px Arail';
+			ctx.fillText(total+'.0',-40,30);
+		}
+	</script>
+</body>
+</html>

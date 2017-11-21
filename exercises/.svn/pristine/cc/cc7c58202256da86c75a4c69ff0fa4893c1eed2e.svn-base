@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin:0;
+			padding:0;
+		}
+		div{
+			width: 33.33%;
+		}
+		input:checked + label{
+			border:1px solid #CCC;
+			color: #2494ff
+		}
+		label{
+			display: block;
+			height: 28px;
+			line-height: 28px;
+			border: 1px solid #CCC;
+			color: red;
+			border-radius: 5px;
+			position: relative;
+		}
+	</style>
+</head>
+<body>
+    <div class="type">
+        <input type="radio" name="ratio1" id="pleased1" checked/>
+        <label for="pleased1">很满意<span></span></label>
+    </div>
+    <div class="type">
+        <input type="radio" name="ratio1" id="commonly1"/>
+        <label for="commonly1">一般<span></span></label>
+    </div>
+    <div class="type">
+        <input type="radio" name="ratio1" id="nopleased1"/>
+        <label for="nopleased1">不满意<span></span></label>
+    </div>
+</body>
+</html>

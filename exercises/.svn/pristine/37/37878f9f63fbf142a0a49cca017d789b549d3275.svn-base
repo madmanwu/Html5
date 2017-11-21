@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <link type="text/css" rel="stylesheet" href="css/font-awesome.css"/>
+    <link type="text/css" rel="stylesheet" href="css/swiper.min.css">
+    <link type="text/css" rel="stylesheet" href="css/reset.css"/>
+    <link type="text/css" rel="stylesheet" href="css/common.css"/>
+    <link type="text/css" rel="stylesheet" href="css/melancholy.css"/>
+</head>
+<body>
+    <header>
+        <i class="fa fa-angle-left i_left"></i>
+        <h2>寻医</h2>
+    </header>
+
+    <section>
+        <div class="search">
+            <div class="middle">
+                <i class="fa fa-search"></i>
+                <input type="text" class="ipt" placeholder="搜索医院，医生，科室，疾病"/>
+            </div>
+        </div>
+        <div class="tit">
+            <p class="left"><i class="fa fa-heart"></i> 健康自诊</p>
+            <p class="right">根据症状找医生 <i class="fa fa-angle-right"></i></p>
+        </div>
+        <ul class="nav">
+            <li>
+                <a href="">
+                    <i class="fa fa-heartbeat" style="color: #7fdbff"></i>
+                    <p>骨科</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="fa fa-envelope-open-o" style="color: #f012be"></i>
+                    <p>儿科</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="fa fa-arrows" style="color: #001f3f"></i>
+                    <p>妇产科</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="fa fa-bicycle" style="color: #01ff70"></i>
+                    <p>口腔科</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="fa fa-birthday-cake" style="color: deeppink"></i>
+                    <p>心血管内科</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="fa fa-bus" style="color: #85144b"></i>
+                    <p>男科</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="fa fa-heartbeat" style="color: #f74d4d"></i>
+                    <p>消化内科科</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="fa fa-th-large" style="color: #3d9970"></i>
+                    <p>更多</p>
+                </a>
+            </li>
+        </ul>
+
+        <div class="patient-type">
+
+            <ul class="title" id="patientTitle">
+                <li class="active">本季常见</li>
+                <li>男性</li>
+                <li>女性</li>
+                <li>儿童</li>
+                <li>老人 <i class="fa fa-angle-right"></i></li>
+            </ul>
+
+            <div class="wrap">
+                <div class="swiper-container patientype-container">
+                    <div class="swiper-wrapper">
+                        <article class="swiper-slide">
+                            <span>颈椎病</span>
+                            <span>月经不调</span>
+                            <span>湿疹</span>
+                            <span>胃食管反流病</span>
+                            <span>胃炎</span>
+                            <span>幽门螺杆菌感染</span>
+                            <span>尿路感染</span>
+                            <span>鼻炎</span>
+                        </article>
+                        <article class="swiper-slide">
+                            <span>陈伟霆</span>
+                            <span>谢霆锋</span>
+                            <span>胡歌</span>
+                            <span>鹿晗</span>
+                            <span>杨洋</span>
+                            <span>赵又廷</span>
+                            <span>阮经天</span>
+                            <span>王栎鑫</span>
+                        </article>
+                        <article class="swiper-slide">
+                            <span>迪丽热巴</span>
+                            <span>古力娜扎</span>
+                            <span>郑爽</span>
+                            <span>谢娜</span>
+                            <span>吴昕</span>
+                            <span>陈乔恩</span>
+                            <span>杨幂</span>
+                            <span>徐璐</span>
+                        </article>
+                        <article class="swiper-slide">
+                            <span>红色</span>
+                            <span>绿色</span>
+                            <span>紫色</span>
+                            <span>白色</span>
+                            <span>灰色</span>
+                            <span>褐色</span>
+                            <span>黑色</span>
+                            <span>粉色</span>
+                        </article>
+                        <article class="swiper-slide">
+                            <span>晴天</span>
+                            <span>阴天</span>
+                            <span>雨天</span>
+                            <span>风天</span>
+                            <span>白天</span>
+                            <span>黑天</span>
+                            <span>看天</span>
+                            <span>聊天</span>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="banner">
+            <div class="swiper-container banner-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/banner/banner01.jpg" alt="gulinazha"/></div>
+                    <div class="swiper-slide"><img src="images/banner/banner02.jpg" alt="dilireba"/></div>
+                    <div class="swiper-slide"><img src="images/banner/banner03.jpg" alt="yangmi"/></div>
+                    <div class="swiper-slide"><img src="images/banner/banner04.jpg" alt="haoliying"/></div>
+                    <div class="swiper-slide"><img src="images/banner/banner05.jpg" alt="wangzuxian"/></div>
+                </div>
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-button-next">
+
+                </div>
+                <div class="swiper-button-prev">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="doctor-list" id="doctorList">
+
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="foot">
+            <a href="">
+                <i class="fa fa-ravelry"></i>
+                <span>挂号</span>
+            </a>
+            <a href="">
+                <i class="fa fa-dot-circle-o"></i>
+                <span>寻医</span>
+            </a>
+            <a href="">
+                <i class="fa fa-heart-o"></i>
+                <span>健康</span>
+            </a>
+            <a href="">
+                <i class="fa fa-user-o"></i>
+                <span>个人中心</span>
+            </a>
+        </div>
+    </footer>
+</body>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript" src="js/zepto.js"></script>
+<script type="text/javascript" src="js/event.js"></script>
+<script type="text/javascript" src="js/ajax.js"></script>
+<script type="text/javascript">
+
+    var banner = new Swiper('.banner-container', {
+        pagination: '.swiper-pagination',
+        prevButton: '.swiper-button-prev',
+        nextButton: '.swiper-button-next'
+    });
+
+    var patienType = new Swiper('.patientype-container', {
+        pagination: '.swiper-pagination',
+        loop: true,
+        paginationClickable: ".swiper-pagination"
+    });
+
+    function slideTo(index) {
+        patienType.slideTo(index);
+    }
+
+    $('#patientTitle').on('click', 'li', function () {
+        var index = $(this).index();
+        $(this).addClass('active').siblings().removeClass('active');
+        slideTo(index);
+    });
+
+    var str = "";
+    $.ajax({
+        url: 'data/data.json',
+        success: function (result) {
+            for (var i = 0; i < result.length; i++) {
+                str += " <dl>" +
+                        "<dt>" +
+                        "<img src="+ result[i].imgs +">" +
+                        "</dt>" +
+                        " <dd>" +
+                        "<h3 class='text-nowrap'>" + result[i].title + "</h3>" +
+                        "<p class='text-nobr'>" + result[i].desc + "</p>" +
+                        "</dd>" +
+                        "</dl>";
+            }
+            $('#doctorList').html(str);
+        }
+    });
+</script>
+</html>

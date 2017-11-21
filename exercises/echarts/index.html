@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        div{
+            width: 500px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+<div id="mycharts"></div>
+<script type="text/javascript" src="js/echarts.min.js"></script>
+<script type="text/javascript">
+    var mycharts = document.getElementById("mycharts");
+    var oCharts = echarts.init(mycharts);
+    var option = {
+        title: {
+            text: '1507B学生生活费统计'
+        },
+        legend: {
+            data: ['RMB']
+        },
+        xAxis: {
+            data: ["吴曼", "刘宁", "郭莹莹", "赵举科", "王麻子"]
+        },
+        yAxis: {},
+        series: [{
+            name: 'RMB',
+            type: 'bar',
+            data: [500, 2000, 3600, 1000, 1000]
+        }]
+    };
+    oCharts.setOption(option);
+</script>
+</body>
+</html>

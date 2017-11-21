@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <link type="text/css" rel="stylesheet" href="css/swiper.min.css"/>
+    <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link type="text/css" rel="stylesheet" href="css/common.css"/>
+    <link type="text/css" rel="stylesheet" href="css/reset.css"/>
+    <link type="text/css" rel="stylesheet" href="css/my.css"/>
+</head>
+<body>
+<header>
+    <div class="on">
+        <p class="left"><i class="fa fa-angle-left"></i>返回</p>
+        <p>登录</p>
+        <i class="fa fa-ellipsis-h right"></i>
+    </div>
+</header>
+
+<section>
+    <div class="message">
+        <div class="subject">
+            <span>头像</span>
+            <p><img src="images/imgs/img1.jpg" alt=""/><i class="fa fa-angle-right"></i></p>
+        </div>
+
+        <div class="cold">
+            <span>昵称</span>
+            <p>WuMan<i class="fa fa-angle-right"></i></p>
+        </div>
+
+        <div class="sex man">
+            <span>性别</span>
+            <p><input type="radio" name="sex"/>男<input type="radio" name="sex" checked class="woman"/>女</p>
+        </div>
+        <div class="email sex">
+            <span>邮箱</span>
+            <p><input type="email" placeholder="请输入邮箱" class="box"/></p>
+        </div>
+        <div class="email">
+            <span>出生日期</span>
+            <p><input type="date" class="data"/><i class="fa fa-angle-right"></i></p>
+        </div>
+        <div class="family">
+            <span>专属管家</span>
+            <p>无<i class="fa fa-angle-right"></i></p>
+        </div>
+    </div>
+</section>
+<footer>
+    <ul class="list">
+        <li>
+            <a href="#">
+                <i class="fa fa-gg"></i>
+                <span>首页</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <i class="fa fa-forumbee"></i>
+                <span>移民项目</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="active">
+                <i class="fa fa-user"></i>
+                <span>个人中心</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <i class="fa fa-phone"></i>
+                <span>联系我们</span>
+            </a>
+        </li>
+    </ul>
+</footer>
+</body>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript" src="js/zepto.js"></script>
+<script type="text/javascript" src="js/event.js"></script>
+<script type="text/javascript" src="js/ajax.js"></script>
+<script type="text/javascript">
+    $(".list").on("click", "a" , function(){
+        $(this).addClass("active").parent().siblings().find("a").removeClass("active")
+    });
+    $(".left").on("click", function(){
+        location.href = "center.html";
+    });
+    $(".active").on("click", function(){
+        location.href = "center.html";
+    });
+    var reg = /^[\w-]+@\w+\.\w+$/g;
+    $(".box").on("blur", function(){
+        var val = this.val();
+        if(!reg1.test(val)){
+            alert("邮箱格式错误")
+        }
+    })
+</script>
+</html>

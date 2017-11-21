@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <link type="text/css" rel="stylesheet" href="css/swiper.min.css"/>
+    <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link type="text/css" rel="stylesheet" href="css/common.css"/>
+    <link type="text/css" rel="stylesheet" href="css/reset.css"/>
+    <link type="text/css" rel="stylesheet" href="css/animation.css"/>
+    <link type="text/css" rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<header>
+    <div class="head">
+        <i class="fa fa-search"></i>
+        <input type="text" placeholder="巴拉巴拉 满199减30"/>
+    </div>
+</header>
+<section>
+    <div class="aside-left">
+        <ul class="list">
+            <li class="active">宝宝奶粉</li>
+            <li>屁屁护理</li>
+            <li>营养辅食</li>
+            <li>美食保健</li>
+            <li>孕产用品</li>
+            <li>喂养用品</li>
+            <li>洗护用品</li>
+            <li>童装童鞋</li>
+            <li>宝宝寝居</li>
+            <li>玩具书籍</li>
+            <li>出行装备</li>
+        </ul>
+    </div>
+    <div class="aside-right">
+
+        <div class="banner swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="images/banner/img.jpg" alt=""/>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/banner/img1.jpg" alt=""/>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/banner/img2.jpg" alt=""/>
+                </div>
+            </div>
+        </div>
+
+        <p class="title">全球奶粉大牌</p>
+
+        <ul class="bottom swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide">
+
+                </div>
+                <div class="swiper-slide slide">
+
+                </div>
+                <div class="swiper-slide slide">
+
+                </div>
+                <div class="swiper-slide slide">
+
+                </div>
+                <div class="swiper-slide slide">
+
+                </div>
+                <div class="swiper-slide slide">
+
+                </div>
+                <div class="swiper-slide slide">
+
+                </div>
+                <div class="swiper-slide slide">
+
+                </div>
+                <div class="swiper-slide slide">
+
+                </div>
+                <div class="swiper-slide slide">
+
+                </div>
+            </div>
+        </ul>
+    </div>
+</section>
+<footer>
+    <ul class="foot">
+        <li>
+            <a href="javascript:;">
+                <i class="fa fa-home"></i>
+                <span>首页</span>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;" class="begin">
+                <i class="fa fa-transgender-alt"></i>
+                <span>找尖货</span>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;">
+                <i class="fa fa-life-ring"></i>
+                <span>蜜芽圈</span>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;">
+                <i class="fa fa-cart-arrow-down"></i>
+                <span>购物车</span>
+            </a>
+        </li>
+        <li>
+            <a href="me.html">
+                <i class="fa fa-user-o"></i>
+                <span>我的</span>
+            </a>
+        </li>
+    </ul>
+</footer>
+
+</body>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript" src="js/zepto.js"></script>
+<script type="text/javascript" src="js/event.js"></script>
+<script type="text/javascript" src="js/ajax.js"></script>
+<script type="text/javascript">
+    var banner = new Swiper(".banner", {
+        loop: true,
+        autoplay: 2500
+    });
+    var myswiper = new Swiper(".bottom", {
+        loop: true
+//        autoplay: 2500
+    });
+
+    function slideTo(arr){
+        myswiper.slideTo(arr);
+    };
+
+    $(".list").on("click", "li", function () {
+        var i = $(this).index();
+        $(this).addClass("active").siblings().removeClass("active");
+        slideTo(i);
+    });
+
+    $(".foot").on("click", "a", function () {
+        $(this).addClass("begin").parent().siblings().find("a").removeClass("begin");
+    });
+
+    var str = "";
+    $.ajax({
+        url: "data/data.json",
+        success: function (data) {
+            for (var i = 0; i < data.length; i++) {
+                str += "<li>" +
+                        "<img src=" + data[i].img + ">" +
+                        "<span>" + data[i].title + "</span>" +
+                        "<span>" + data[i].small + "</span>" +
+                        "</li>";
+//                $(".slide").html(str);
+            }
+            $(".slide").html(str);
+        }
+    });
+
+</script>
+</html>

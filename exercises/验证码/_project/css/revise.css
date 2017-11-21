@@ -1,0 +1,78 @@
+body {
+  font-size: 0.12rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  display: -webkit-flex;
+  -webkit-flex-direction: column; }
+
+.header {
+  height: 0.47rem;
+  line-height: 0.47rem;
+  background: #c80a0f;
+  position: relative;
+  text-align: center;
+  color: #fff; }
+  .header > i {
+    position: absolute;
+    top: 10px;
+    left: 10px; }
+  .header > h3 {
+    font-weight: normal; }
+
+.section {
+  -webkit-flex: 1;
+  background: #dddede; }
+  .section > form {
+    background: #fff; }
+    .section > form > p {
+      height: 0.47rem;
+      box-sizing: border-box;
+      padding-left: 15px;
+      padding-right: 15px;
+      display: -webkit-flex;
+      border-bottom: 1px solid #e5e5e5; }
+      .section > form > p > input::-webkit-input-placeholder {
+        color: #8f8f8f; }
+      .section > form > p > input {
+        -webkit-flex: 1;
+        border-width: 0;
+        outline: none;
+        cursor: default;
+        color: #8f8f8f; }
+    .section > form > p:nth-child(2) {
+      position: relative; }
+      .section > form > p:nth-child(2) > span {
+        position: absolute;
+        right: 15px;
+        top: 3px;
+        background: #c10000;
+        color: #fff;
+        border-radius: 3px;
+        box-sizing: border-box;
+        padding: 12px 30px; }
+  .section .verify {
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    box-sizing: border-box;
+    padding: 15px 25px;
+    text-align: center; }
+    .section .verify > p > a:last-child {
+      color: #fe1818; }
+    .section .verify > p > a {
+      display: block; }
+    .section .verify > button {
+      -webkit-flex: 1;
+      background: #c10000;
+      border-width: 0;
+      outline: none;
+      cursor: default;
+      color: #fff;
+      box-sizing: border-box;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-radius: 3px;
+      margin-top: 15px; }
+
+/*# sourceMappingURL=revise.css.map */

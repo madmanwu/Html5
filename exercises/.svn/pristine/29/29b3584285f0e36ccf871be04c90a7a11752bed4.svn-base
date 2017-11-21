@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link type="text/css" rel="stylesheet" href="css/common.css"/>
+    <link type="text/css" rel="stylesheet" href="css/reset.css"/>
+    <link type="text/css" rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+    <header>
+        <div class="">微信</div>
+        <span>
+            <i class="glyphicon glyphicon-plus"></i>
+        </span>
+    </header>
+    <section>
+        <div class="search">
+            <input type="text"/>
+            <!--<p class="middle">
+                <i class="glyphicon glyphicon-search"></i>
+                <span>搜索</span>
+            </p>-->
+            <!--<p class="last">
+                <i class="fa fa-microphone"></i>
+            </p>-->
+        </div>
+
+        <div class="user">
+            <div class="">
+                <p class="picture col-xs-1">
+                    <img src="images/imgs/imm.jpg" alt="" class=""/>
+                </p>
+
+                <p class="man col-xs-8"><span class="name">闵唯一</span><span class="content">我想你^(*￣(oo)￣)^</span></p>
+                <p class="time col-xs-2">17:03</p>
+                <P class="del">
+                    <span class="top">标为未读</span>
+                    <span class="last">删除</span>
+                </P>
+            </div>
+
+            <div class="">
+                <p class="picture col-xs-1">
+                    <img src="images/imgs/img.jpg" alt="" class=""/>
+                </p>
+
+                <p class="man col-xs-8"><span class="name">大蔓蔓</span><span class="content">❤</span></p>
+                <p class="time col-xs-2">17:03</p>
+                <P class="del">
+                    <span class="top">标为未读</span>
+                    <span class="last">删除</span>
+                </P>
+            </div>
+
+            <div class="">
+                <p class="picture col-xs-1">
+                    <img src="images/imgs/img0.jpg" alt="" class=""/>
+                </p>
+
+                <p class="man col-xs-8"><span class="name">订阅号</span><span class="content">发型日志：郑凯首次回应：baby与热巴谁才是跑男一</span></p>
+                <p class="time col-xs-2">17:03</p>
+                <P class="del">
+                    <span class="top">标为未读</span>
+                    <span class="last">删除</span>
+                </P>
+            </div>
+
+            <div class="">
+                <p class="picture col-xs-1">
+                    <img src="images/imgs/img6.jpg" alt="" class=""/>
+                </p>
+
+                <p class="man col-xs-8"><span class="name">鹿晗</span><span class="content">迪丽热巴</span></p>
+                <p class="time col-xs-2">17:03</p>
+
+                <P class="del">
+                    <span class="top">标为未读</span>
+                    <span class="last">删除</span>
+                </P>
+
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-3  active">
+                    <i class="fa fa-comment-o"></i>
+                    <span>微信</span>
+                </div>
+                <div class="col-xs-3">
+                    <i class="fa fa-address-book-o"></i>
+                    <span>通讯录</span>
+                </div>
+                <div class="col-xs-3">
+                    <i class="fa fa-compass"></i>
+                    <span>发现</span>
+                </div>
+                <div class="col-xs-3">
+                    <i class="fa fa-user-o"></i>
+                    <span>我</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script type="text/javascript" src="js/jquery1.1.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+
+<script type="text/javascript">
+    $(".user").on('touchmove', "div", function () {
+        $(this).animate({left: '-132px'}, "slow");
+        $(this).find(".del").show();
+    });
+
+    $(".del").on('click', function () {
+        $(this).parent("div").remove();
+    });
+
+    $(".row").on("click", "div", function(){
+        $(this).addClass("active").siblings().removeClass("active");
+    })
+</script>
+</html>

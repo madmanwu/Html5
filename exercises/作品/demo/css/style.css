@@ -1,0 +1,266 @@
+body {
+  font-size: 0.12rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #e6e6e6; }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0.1rem;
+  padding-right: 0.1rem;
+  padding-top: 0.04rem; }
+  header .left {
+    padding-right: 0.11rem;
+    height: 0.26rem;
+    text-align: center; }
+    header .left p {
+      color: #390072;
+      font-size: 0.14rem; }
+    header .left span {
+      color: #390072; }
+  header .middle {
+    width: 100%;
+    background: #ffffff;
+    border-radius: 0.03rem;
+    height: 0.28rem;
+    position: relative; }
+    header .middle input {
+      height: 0.26rem;
+      border-radius: 0.03rem;
+      border-width: 0;
+      outline: none;
+      padding-left: 0.1rem;
+      width: 85%; }
+    header .middle i {
+      position: absolute;
+      right: 0.1rem;
+      top: 0.06rem;
+      color: #bcbcbc;
+      font-size: 0.14rem; }
+  header .right {
+    padding-left: 0.11rem;
+    padding-top: 0.06rem; }
+    header .right i {
+      font-size: 0.18rem;
+      color: #bcbcbc; }
+
+section {
+  flex: 1;
+  overflow-y: auto;
+  margin-top: 0.12rem; }
+  section .banner {
+    height: 1.43rem; }
+    section .banner img {
+      width: 100%;
+      height: 100%; }
+  section .center {
+    padding: 0.12rem 0.31rem;
+    border-bottom: 0.01rem solid #CCC;
+    background: #ffffff;
+    margin-bottom: 0.11rem; }
+    section .center ul {
+      display: flex;
+      justify-content: space-between; }
+      section .center ul li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        section .center ul li span {
+          border-radius: 0.09rem;
+          text-align: center;
+          display: block;
+          width: 0.3rem;
+          line-height: 0.3rem;
+          margin-bottom: 0.11rem; }
+          section .center ul li span i {
+            font-size: 0.16rem;
+            color: #ffffff; }
+          section .center ul li span b {
+            font-size: 0.16rem;
+            color: #ffffff;
+            font-weight: normal; }
+      section .center ul li:nth-child(1) span {
+        background: #6eb3ff; }
+      section .center ul li:nth-child(2) span {
+        background: #ff812b; }
+      section .center ul li:nth-child(3) span {
+        background: #6bf489; }
+      section .center ul li:nth-child(4) span {
+        background: #ff5a88; }
+  section .shop {
+    background: #ffffff;
+    border-top: 0.01rem solid #ccc; }
+    section .shop .top {
+      display: flex;
+      justify-content: center; }
+      section .shop .top span {
+        padding-top: 0.11rem;
+        padding-bottom: 0.11rem;
+        color: #ccc; }
+      section .shop .top p {
+        padding-left: 0.16rem;
+        padding-right: 0.16rem;
+        padding-top: 0.11rem;
+        color: #6d00dc;
+        font-size: 0.14rem; }
+        section .shop .top p span {
+          color: #6d00dc; }
+        section .shop .top p i {
+          padding-right: 0.12rem; }
+    section .shop .bottom {
+      border-bottom: 0.01rem solid #CCC;
+      padding-left: 0.05rem;
+      padding-right: 0.05rem;
+      margin-bottom: 0.1rem; }
+      section .shop .bottom ul {
+        border-top: 0.01rem solid #CCC;
+        display: flex;
+        flex-wrap: wrap; }
+        section .shop .bottom ul li {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          padding-top: 0.07rem;
+          align-items: center;
+          padding-bottom: 0.1rem;
+          width: 24%; }
+          section .shop .bottom ul li p {
+            margin-top: 0.08rem; }
+            section .shop .bottom ul li p img {
+              border-radius: 50%;
+              width: 100%;
+              height: 100%; }
+          section .shop .bottom ul li .more {
+            height: 0.46rem;
+            width: 0.46rem;
+            border-radius: 50%;
+            background: #f8c466;
+            text-align: center;
+            line-height: 0.55rem; }
+            section .shop .bottom ul li .more i {
+              font-size: 0.27rem;
+              color: #fff; }
+        section .shop .bottom ul li:nth-child(1) {
+          border-right: 0.01rem solid #CCC; }
+        section .shop .bottom ul li:nth-child(2) {
+          border-right: 0.01rem solid #CCC; }
+        section .shop .bottom ul li:nth-child(3) {
+          border-right: 0.01rem solid #CCC; }
+        section .shop .bottom ul li:nth-child(5) {
+          border-top: 0.01rem solid #CCC;
+          border-right: 0.01rem solid #CCC; }
+        section .shop .bottom ul li:nth-child(6) {
+          border-right: 0.01rem solid #CCC;
+          border-top: 0.01rem solid #CCC; }
+        section .shop .bottom ul li:nth-child(7) {
+          border-right: 0.01rem solid #CCC;
+          border-top: 0.01rem solid #CCC; }
+        section .shop .bottom ul li:nth-child(8) {
+          border-top: 0.01rem solid #CCC; }
+  section .box {
+    border-bottom: 0.01rem solid #CCC;
+    border-top: 0.01rem solid #CCC;
+    padding: 0.14rem 0.09rem;
+    background: #ffffff; }
+    section .box p {
+      display: flex; }
+      section .box p span:nth-child(1) {
+        color: #000;
+        display: block;
+        width: 0.29rem; }
+      section .box p span:nth-child(2) {
+        display: block;
+        width: 0.29rem;
+        background: red;
+        color: #ffffff; }
+      section .box p .write {
+        padding-left: 0.05rem;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        color: #666; }
+      section .box p i {
+        color: red; }
+  section .contain {
+    margin-top: 0.1rem;
+    background: #ffffff;
+    border-top: 0.01rem solid #ccc; }
+    section .contain .top {
+      display: flex;
+      justify-content: center; }
+      section .contain .top span {
+        padding-top: 0.11rem;
+        padding-bottom: 0.11rem;
+        color: #ccc; }
+      section .contain .top p {
+        padding-left: 0.16rem;
+        padding-right: 0.16rem;
+        padding-top: 0.11rem;
+        color: #6d00dc;
+        font-size: 0.14rem; }
+        section .contain .top p span {
+          color: #6d00dc; }
+        section .contain .top p i {
+          padding-right: 0.12rem; }
+    section .contain .center {
+      background: red;
+      height: 0.69rem;
+      box-sizing: border-box;
+      position: relative; }
+      section .contain .center .imgs {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%; }
+  section .foot {
+    text-align: center; }
+    section .foot span {
+      padding-top: 0.13rem; }
+    section .foot p {
+      margin-top: 0.1rem;
+      padding-bottom: 0.13rem; }
+  section .main {
+    position: relative;
+    margin-bottom: 0.14rem;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.05rem 0.05rem;
+    justify-content: space-between;
+    background: #ffffff; }
+    section .main li {
+      margin-top: 0.05rem;
+      width: 49%; }
+      section .main li .imgs img {
+        width: 100%;
+        height: 100%; }
+      section .main li span {
+        width: 100%;
+        text-overflow: ellipsis;
+        display: -webkit-box; }
+      section .main li .money {
+        color: red; }
+  section #pullup {
+    height: 0.3rem;
+    width: 100%;
+    text-align: center; }
+  section #btn {
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    background: #6d00dc;
+    width: 0.34rem;
+    line-height: 0.34rem;
+    text-align: center;
+    border-radius: 50%; }
+    section #btn i {
+      color: #fff;
+      font-size: 0.18rem; }
+
+/*# sourceMappingURL=style.css.map */

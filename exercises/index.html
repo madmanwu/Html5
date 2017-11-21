@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link type="text/css" rel="stylesheet" href="css/common.css"/>
+    <link type="text/css" rel="stylesheet" href="css/reset.css"/>
+    <link type="text/css" rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+    
+    <section>
+        <!--轮播图的盒子-->
+        <div class="carousel" id="slidershow">
+            <!--索引-->
+            <ol class="carousel-indicators">
+                <li data-target="#slidershow" data-slide-to="0" class="active"></li>
+                <li data-target="#slidershow" data-slide-to="1"></li>
+                <li data-target="#slidershow" data-slide-to="2"></li>
+                <li data-target="#slidershow" data-slide-to="3"></li>
+                <li data-target="#slidershow" data-slide-to="4"></li>
+                <li data-target="#slidershow" data-slide-to="5"></li>
+                <li data-target="#slidershow" data-slide-to="6"></li>
+            </ol>
+
+            <!--要轮播的图片所在的大盒子-->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="images/imgs/img0.jpg" alt="" style="width: 100%;height: 269px"/>
+                </div>
+                <div class="item">
+                    <img src="images/imgs/img1.jpg" alt="" style="width: 100%;height: 269px"/>
+                </div>
+                <div class="item">
+                    <img src="images/imgs/img2.jpg" alt="" style="width: 100%;height: 269px"/>
+                </div>
+                <div class="item">
+                    <img src="images/imgs/img3.jpg" alt="" style="width: 100%;height: 269px"/>
+                </div>
+                <div class="item">
+                    <img src="images/imgs/img4.jpg" alt="" style="width: 100%;height: 269px"/>
+                </div>
+                <div class="item">
+                    <img src="images/imgs/img6.jpg" alt="" style="width: 100%;height: 269px"/>
+                </div>
+                <div class="item">
+                    <img src="images/imgs/img8.jpg" alt="" style="width: 100%;height: 269px"/>
+                </div>
+            </div>
+
+            <!--方向按钮-->
+            <a href="#slidershow" data-slide="prev" class="left carousel-control" role="button">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a href="#slidershow" data-slide="next" class="right carousel-control" role="button">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+        </div>
+    </section>
+</body>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</html>

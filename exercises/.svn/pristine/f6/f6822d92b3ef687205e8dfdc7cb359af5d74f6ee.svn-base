@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+    </style>
+</head>
+<body>
+
+<div style="width:1000px;height:900px;border:1px solid gray" id="map"></div>
+</body>
+
+<script src="http://api.map.baidu.com/api?v=2.0&ak=RX3ouZsCfLG8WtmK3pe8984htoxLMg71" type="text/javascript"></script>
+<script type="text/javascript">
+    var wrap = document.getElementById("map");
+    var map = new BMap.Map("map");
+    var point = new BMap.Point(116.62,41.16);
+    var points = new BMap.Point(116.413,39.911);
+    map.centerAndZoom(point,11);
+    map.centerAndZoom(points,11);
+//    地图平移缩放控件
+    map.addControl(new BMap.NavigationControl());
+//    缩略地图控件
+    map.addControl(new BMap.OverviewMapControl());
+//    比例尺控件
+    map.addControl(new BMap.ScaleControl());
+//    地图类型控件
+    map.addControl(new BMap.MapTypeControl());
+//    版权控件
+    map.addControl(new BMap.CopyrightControl());
+//    定位控件
+    map.addControl(new BMap.GeolocationControl());
+//    仅当设置城市信息时，MapTypeControl的切换功能才能可用
+    map.setCurrentCity("北京");
+
+</script>
+</html>

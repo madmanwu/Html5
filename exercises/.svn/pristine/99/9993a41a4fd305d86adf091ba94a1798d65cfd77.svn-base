@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <link type="text/css" rel="stylesheet" href="css/font-awesome.css"/>
+    <link type="text/css" rel="stylesheet" href="css/swiper.min.css">
+    <link type="text/css" rel="stylesheet" href="css/reset.css"/>
+    <link type="text/css" rel="stylesheet" href="css/common.css"/>
+    <link type="text/css" rel="stylesheet" href="css/registration.css"/>
+</head>
+<body>
+    <header>
+        <h2>挂号</h2>
+    </header>
+
+    <section>
+        <div class="search">
+            <div class="middle">
+                <i class="fa fa-search"></i>
+                <input type="text" class="ipt" placeholder="搜索医院，医生，科室，疾病"/>
+            </div>
+        </div>
+
+        <div class="banner">
+            <div class="swiper-container banner-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/banners/banners1.jpg" alt="gulinazha"/></div>
+                    <div class="swiper-slide"><img src="images/banners/banners2.jpg" alt="dilireba"/></div>
+                    <div class="swiper-slide"><img src="images/banners/banners3.jpg" alt="yangmi"/></div>
+                    <div class="swiper-slide"><img src="images/banners/banners4.jpg" alt="haoliying"/></div>
+                    <div class="swiper-slide"><img src="images/banners/banners5.jpg" alt="wangzuxian"/></div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+
+        <div class="nav">
+            <div>
+                <span style="background: #f6b002"><i class="fa fa-header"></i></span><p>预约挂号</p>
+            </div>
+            <div>
+                <span style="background: #75c00d"><i class="fa fa-header"></i></span><div class="small">60</div><p>预约挂号</p>
+            </div>
+            <div>
+                <span style="background: #3d99c8"><i class="fa fa-header"></i></span><p>预约挂号</p>
+            </div>
+        </div>
+
+        <dl class="top-line">
+            <dt><img src="images/pic/pic1.jpg" alt=""/></dt>
+            <dd>
+                <p><i class="fa fa-header"></i>微医平台挂号问诊服务不收取额外费用</p>
+                <p><span></span>节后不想上班也是病，得治！</p>
+            </dd>
+        </dl>
+
+        <div class="answers">
+            <div class="left">
+                <p>
+                    <span style="color: #e87928">你问医生答</span>
+                    <span>每日一问 健康有奖</span>
+                    <span class="circle">HOT</span>
+                </p>
+                <img src="images/pic/pic3.jpg" alt=""/>
+            </div>
+            <div class="right">
+                <p>
+                    <span style="color: #e87928">门诊大厅</span>
+                    <span>在线看病送药到家</span>
+                    <span class="circle">NEW</span>
+                </p>
+                <img src="images/pic/pic2.jpg" alt=""/>
+            </div>
+        </div>
+
+        <div class="list">
+            <div>
+                <h4>精准预约</h4>
+                <p>帮你找医生</p>
+                <img src="images/pic/pic7.jpg" alt=""/>
+            </div>
+            <div>
+                <h4>专家看片</h4>
+                <p>权威诊断</p>
+                <img src="images/pic/pic8.jpg" alt=""/>
+            </div>
+            <div>
+                <h4>明星医院</h4>
+                <p>北京协和</p>
+                <img src="images/pic/pic9.jpg" alt=""/>
+            </div>
+            <div style="border:none">
+                <h4>手术直通</h4>
+                <p>绿色通道</p>
+                <img src="images/pic/pic01.jpg" alt=""/>
+            </div>
+        </div>
+
+        <div class="more">
+            <p>健康云城</p><span>更多 <i class="fa fa-angle-right"></i></span>
+        </div>
+
+        <div class="home">
+            <div class="home-left">
+                <h3>健康红人</h3>
+                <p>医生红人在线</p>
+                <img src="images/pic/pic5.jpg" alt=""/>
+            </div>
+
+            <div class="home-right">
+                <div class="home-top">
+                    <div>
+                        <p style="color: #e87928">家中常备</p>
+                        <span>营养健康 丨 肠胃保健</span> 
+                    </div>
+                    <img src="images/pic/pic4.jpg" alt=""/>
+                </div>
+                <div class="home-last">
+                    <div>
+                        <p style="color: #e87928">男性健康</p>
+                        <span>强健体魄 丨 泌尿生殖</span>
+                    </div>
+                    <img src="images/pic/pic6.jpg" alt=""/>
+                </div>
+            </div>
+        </div>
+
+        <div class="more">
+            <p>健康云城</p><span>更多 <i class="fa fa-angle-right"></i></span>
+        </div>
+
+        <div class="wrap">
+            <div class="swiper-container patientype-container">
+                <div class="swiper-wrapper">
+                    <article class="swiper-slide">
+                        <span>颈椎病</span>
+                        <span>月经不调</span>
+                        <span>湿疹</span>
+                        <span>胃食管反流病</span>
+                        <span>胃炎</span>
+                        <span>幽门螺杆菌感染</span>
+                        <span>尿路感染</span>
+                        <span>鼻炎</span>
+                    </article>
+                </div>
+            </div>
+        </div>
+        
+        <div class="img">
+            <img src="images/pic/pic11.jpg" alt=""/>
+        </div>
+
+        <ul class="title" id="patientTitle">
+            <li class="active">推荐</li>
+            <li>生活</li>
+            <li>两性</li>
+            <li>母婴</li>
+            <li>女性</li>
+            <li>营养</li>
+            <li><i class="fa fa-angle-right"></i></li>
+        </ul>
+
+        <div class="doctor-list" id="doctorList"></div>
+    </section>
+
+    <footer>
+        <div class="foot">
+            <a href="">
+                <i class="fa fa-ravelry"></i>
+                <span>挂号</span>
+            </a>
+            <a href="">
+                <i class="fa fa-dot-circle-o"></i>
+                <span>寻医</span>
+            </a>
+            <a href="">
+                <i class="fa fa-heart-o"></i>
+                <span>健康</span>
+            </a>
+            <a href="">
+                <i class="fa fa-user-o"></i>
+                <span>个人中心</span>
+            </a>
+        </div>
+    </footer>
+</body>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript" src="js/zepto.js"></script>
+<script type="text/javascript" src="js/event.js"></script>
+<script type="text/javascript" src="js/ajax.js"></script>
+<script type="text/javascript">
+    var mySwiper = new Swiper( ".banner-container", {
+        pagination: '.swiper-pagination',
+        prevButton: '.swiper-button-prev',
+        nextButton: '.swiper-button-next'
+    } );
+
+    $('.title').on('click', 'li', function () {
+        $(this).addClass('active').siblings().removeClass('active');
+    });
+
+    var str = "";
+    $.ajax({
+        url: 'data/datas.json',
+        success: function (result) {
+            for (var i = 0; i < result.length; i++) {
+                str += " <dl>" +
+                        "<dt>" +
+                        "<img src="+ result[i].imgs +">" +
+                        "</dt>" +
+                        " <dd>" +
+                        "<h3 class='text-nowrap'>" + result[i].title + "</h3>" +
+                        "<p class='text-nobr'>" + result[i].desc + "</p>" +
+                        "</dd>" +
+                        "</dl>";
+            }
+            $('#doctorList').html(str);
+        }
+    });
+</script>
+</html>

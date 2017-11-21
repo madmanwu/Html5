@@ -1,0 +1,99 @@
+body
+  position: absolute
+  width: 100%
+  top: 0
+  bottom: 0
+  display: -webkit-flex
+  font-size: 0.12rem
+  flex-direction: column
+header
+  .on
+    width: 100%
+    display: flex
+    height: 0.35rem
+    background: #1b1b20
+    font-size: 0.14rem
+    color: #ffffff
+    justify-content: space-between
+    align-items: center
+    box-sizing: border-box
+    padding: 0.11rem 0.1rem
+    .left
+      width: 0.37rem
+      i
+        margin-right: 0.03rem
+        font-size: 0.16rem
+    & > .right
+      width: 0.37rem
+      text-align: right
+
+section
+  flex: 1
+  overflow-y: auto
+  .message
+    width: 100%
+    display: flex
+    flex-direction: column
+    div
+      padding-left: 0.11rem
+      padding-right: 0.11rem
+      box-sizing: border-box
+      width: 100%
+      height: 0.42rem
+      display: flex
+      align-items: center
+      justify-content: space-between
+    .email
+      border-bottom: 0.01rem solid #CCC
+      p
+        input
+          border-width: 0
+          width: 0.65rem
+          outline: none
+      p
+        color: #CCCCCC
+        .data
+          width: auto
+    .sex
+      padding-right: 0.18rem
+      border-bottom: 0.01rem solid #CCC
+    p
+      display: flex
+      align-items: center
+      justify-content: center
+      i
+        padding-left: 0.08rem
+    .subject
+      width: 100%
+      display: flex
+      height: 0.5rem
+      border-bottom: 0.01rem solid #CCC
+      img
+        width: 0.39rem
+        height: 0.39rem
+        border-radius: 50%
+    .family
+      border-bottom: 0.01rem solid #CCC
+    .cold
+      border-bottom: 0.01rem solid #CCC
+footer
+  width: 100%
+  ul
+    width: 100%
+    background: #FFF
+    height: 0.41rem
+    display: flex
+    border-top: 0.01rem solid #ededed
+    justify-content: center
+    align-items: center
+    li
+      padding-top: 0.05rem
+      padding-bottom: 0.05rem
+      flex: 1
+      a
+        justify-content: center
+        display: flex
+        flex-direction: column
+        align-items: center
+      .active
+        color: #138bf0

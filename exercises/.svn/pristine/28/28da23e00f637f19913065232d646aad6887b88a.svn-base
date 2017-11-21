@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <link type="text/css" rel="stylesheet" href="css/swiper.min.css"/>
+    <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link type="text/css" rel="stylesheet" href="css/common.css"/>
+    <link type="text/css" rel="stylesheet" href="css/reset.css"/>
+    <link type="text/css" rel="stylesheet" href="css/plan.css"/>
+</head>
+<body>
+<header>
+    <div class="on">
+        <p class="left"><i class="fa fa-angle-left"></i>返回</p>
+        <p>我的进度</p>
+        <i class="fa fa-ellipsis-h right"></i>
+    </div>
+</header>
+<section>
+    <p>在办项目</p>
+    <!--<div class="picture">-->
+        <!--<p class="title">-->
+            <!--<span>美国EB-5项目</span><span>准备打投资款<i class="fa fa-angle-right"></i></span>-->
+        <!--</p>-->
+        <!--<p class="img">-->
+            <!--<img src="images/upload/up1.jpg" alt=""/>-->
+        <!--</p>-->
+    <!--</div>-->
+</section>
+</body>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript" src="js/zepto.js"></script>
+<script type="text/javascript" src="js/event.js"></script>
+<script type="text/javascript" src="js/ajax.js"></script>
+<script type="text/javascript">
+    var str = "";
+    $.ajax({
+        url: 'data/data.json',
+        success: function (result) {
+            for (var i = 0; i < result.length; i++) {
+//                str += " <dl>" +
+//                        "<dt>" +
+//                        "<img src="+ result[i].imgs +">" +
+//                        "</dt>" +
+//                        " <dd>" +
+//                        "<h3 class='text-nowrap'>" + result[i].title + "</h3>" +
+//                        "<p class='text-nobr'>" + result[i].desc + "</p>" +
+//                        "</dd>" +
+//                        "</dl>";
+                str += "<div class='picture'>"+
+                        "<p class='title'>"+
+                        "<span>"+ result[i].left +"</span>"+"<span>"+ result[i].right +"<i class='fa fa-angle-right'>"+"</i>"+"</span>"+
+                        "</p>"+
+                        "<p class='img'>"+
+                        "<img src="+ result[i].imgs +">" +
+                        "</p>"+
+                        "</div>";
+            }
+            $('section').html(str);
+            $(".picture").on("click", function(){
+                var i = $(this).index();
+                switch (i){
+                    case 0:
+                        location.href = "play.html";
+                        break;
+                    case 1:
+                        location.href = "plays.html";
+                        break;
+                    case 2:
+                        location.href = "playss.html";
+                }
+            })
+        }
+    });
+    $(".left").on("click", function(){
+        location.href = "center.html";
+    })
+</script>
+</html>

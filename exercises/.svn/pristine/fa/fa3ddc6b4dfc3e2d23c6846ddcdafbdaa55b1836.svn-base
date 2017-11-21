@@ -1,0 +1,16 @@
+body {
+  font-size: 0.14rem; }
+
+.body-left {
+  width: 2rem;
+  height: 100%;
+  background: #01ff70; }
+
+.banner {
+  height: 2rem;
+  overflow: hidden; }
+  .banner img {
+    width: 100%;
+    height: 100%; }
+
+/*# sourceMappingURL=style.css.map */

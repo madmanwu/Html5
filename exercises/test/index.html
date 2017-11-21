@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link type="text/css" rel="stylesheet" href="css/swiper.min.css"/>
+    <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link type="text/css" rel="stylesheet" href="css/common.css"/>
+    <link type="text/css" rel="stylesheet" href="css/reset.css"/>
+    <link type="text/css" rel="stylesheet" href="css/animation.css"/>
+    <link type="text/css" rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<header>
+    <span class="circle"><i class="glyphicon glyphicon-menu-left"></i></span>
+    <h4>模板商城</h4>
+
+    <div class="container">
+        <ul class="row list">
+            <li class="active col-xs-4">最热</li>
+            <li class="col-xs-4">最新</li>
+            <li class="col-xs-4">免费</li>
+        </ul>
+    </div>
+</header>
+<section>
+    <div class="swiper-container images" id="banner">
+        <div class="swiper-wrapper">
+            <div id="pulldown">
+                <label for="">
+                    下拉刷新
+                </label>
+            </div>
+            <div class="swiper-slide slide" id="slid">
+
+            </div>
+            <div class="swiper-slide slide">
+
+            </div>
+            <div class="swiper-slide slide">
+
+            </div>
+            <div id="pullup">
+                <label for="">
+                    上拉加载
+                </label>
+            </div>
+        </div>
+    </div>
+</section>
+<footer></footer>
+</body>
+<script type="text/javascript" src="js/iscroll4.js"></script>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    $(".list").on("click", "li", function () {
+        $(this).addClass("active").siblings().removeClass("active");
+    });
+
+    //    轮播切换
+    var myswiper = new Swiper(".images");
+    function slideTo(arr) {
+        myswiper.slideTo(arr);
+    }
+    ;
+    $(".list").on("click", "li", function () {
+        var i = $(this).index();
+        $(this).addClass("active").siblings().removeClass("active");
+        slideTo(i);
+    });
+
+    //    ajax数据
+    var str = "";
+    $.ajax({
+        url: "data/data.json",
+        success: function (data) {
+            for (var i = 0; i < data.length; i++) {
+                str += "<div class='col-xs-4 box'>" +
+                        "<p class='img'>" +
+                        "<img src=" + data[i].img + "/>" +
+                        "</p>" +
+                        "<p class='write'>" + data[i].title + "</p>" +
+                        "<span>" +
+                        "<i class=" + data[i].tu + ">" +
+                        "</i>" + data[i].number + "</span>" +
+                        "</div>";
+            }
+            $(".slide").html(str);
+        }
+    });
+
+    //    iscroll
+    var pulldownEle = document.getElementById("pulldown");
+    var pullupEle = document.getElementById("pullup");
+    var iscroll = new iScroll("banner", {
+        scrollbars: true,
+        topOffset: pulldownEle.offsetHeight,
+        onScrollMove: function () {
+            if (this.y > 38 && !pulldownEle.className.match("flip")) {
+                pulldownEle.className.className = "flip";
+                pulldownEle.querySelector("label").innerText = "松手刷新";
+            }
+            if (this.y < this.maxScrollY && !pulldownEle.className.match('flip')) {
+                pullupEle.className = "flip";
+                pullupEle.querySelector("label").innerHTML = "松手加载";
+            }
+        },
+        onScrollEnd: function () {
+            if (pulldownEle.className.match("flip")) {
+                pulldownEle.className = "loading";
+                pulldownEle.querySelector("label").innerText = "正在加载";
+                refreshAction();
+            }
+            if (pullupEle.className.match("flip")) {
+                pullupEle.className = "loading";
+                pullupEle.querySelector("label").innerText = "正在加载";
+                refreshAction();
+            }
+        },
+        onRefresh: function () {
+            if (pulldownEle.className.match("loading")) {
+                pulldownEle.className = "";
+                pulldownEle.querySelector("label").innerText = "下拉刷新";
+            }
+            if (pullupEle.className.match("loading")) {
+                pullupEle.className = "";
+                pullupEle.querySelector("label").innerText = "上拉刷新";
+            }
+        }
+    });
+    function refreshAction() {
+        var str = "";
+        $.ajax({
+            url: "data/data.json",
+            success: function (data) {
+                console.log(data);
+                for (var i = 0; i < data.length; i++) {
+//                    str+= "666";
+                    str += "<div class='col-xs-4 box'>" +
+                            "<p class='img'>" +
+                            "<img src=" + data[i].img + "/>" +
+                            "</p>" +
+                            "<p class='write'>" + data[i].title + "</p>" +
+                            "<span>" +
+                            "<i class=" + data[i].tu + ">" +
+                            "</i>" + data[i].number + "</span>" +
+                            "</div>";
+                };
+                $("#slid").html(str);
+                document.getElementsByClassName("slide").innerHTML += str;
+            }
+        });
+        console.log("loading");
+        iscroll.refresh();
+    };
+</script>
+</html>

@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <link type="text/css" rel="stylesheet" href="css/swiper.min.css"/>
+    <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link type="text/css" rel="stylesheet" href="css/common.css"/>
+    <link type="text/css" rel="stylesheet" href="css/reset.css"/>
+    <link type="text/css" rel="stylesheet" href="css/idea.css"/>
+</head>
+<body>
+<header>
+    <div class="on">
+        <p class="left"><i class="fa fa-angle-left"></i>返回</p>
+        <p>意见反馈</p>
+        <i class="fa fa-ellipsis-h right"></i>
+    </div>
+</header>
+<section>
+    <p class="title">请选择您对我们的满意度，让我们做的更好</p>
+    <div class="deep">
+        <div class="satisfaction">
+            <p>反馈效率</p>
+            <div>
+                <p class="choice">
+                    <input type="radio" id="switch"/>
+                    <label for="switch" class="active first">
+                        <span>很满意</span>
+                    </label>
+                </p>
+                <p class="choice">
+                    <input type="radio" id="switch"/>
+                    <label for="switch" class="middle first">
+                        <span>一般</span>
+                    </label>
+                </p>
+                <p class="choice">
+                    <input type="radio" id="switch"/>
+                    <label for="switch" class="first">
+                        <span>不满意</span>
+                    </label>
+                </p>
+            </div>
+        </div>
+        <div class="general">
+            <p>问答专业度</p>
+            <div>
+                <p class="choice">
+                    <input type="radio" id="switch"/>
+                    <label for="switch" class="active center">
+                        <span>很满意</span>
+                    </label>
+                </p>
+                <p class="choice">
+                    <input type="radio" id="switch"/>
+                    <label for="switch" class="middle center">
+                        <span>一般</span>
+                    </label>
+                </p>
+                <p class="choice">
+                    <input type="radio" id="switch"/>
+                    <label for="switch" class="center">
+                        <span>不满意</span>
+                    </label>
+                </p>
+            </div>
+        </div>
+        <div class="yawp">
+            <p>及时回访</p>
+            <div>
+                <p class="choice">
+                    <input type="radio" id="switch"/>
+                    <label for="switch" class="active last">
+                        <span>很满意</span>
+                    </label>
+                </p>
+                <p class="choice">
+                    <input type="radio" id="switch"/>
+                    <label for="switch" class="middle last">
+                        <span>一般</span>
+                    </label>
+                </p>
+                <p class="choice">
+                    <input type="radio" id="switch"/>
+                    <label for="switch" class="last">
+                        <span>不满意</span>
+                    </label>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="write">
+        <textarea name="" id="" cols="30" rows="10" class="area" placeholder="还是不满意，吐槽一下吧"></textarea>
+    </div>
+    <div class="phone">
+        <input type="text" placeholder="请留下您的联系方式：QQ、手机号或邮箱（选填）"/>
+    </div>
+    <div class="btn">
+        <button>确认提交</button>
+    </div>
+</section>
+</body>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript" src="js/zepto.js"></script>
+<script type="text/javascript" src="js/event.js"></script>
+<script type="text/javascript" src="js/ajax.js"></script>
+<script type="text/javascript">
+    $(".btn").on("click", function(){
+        alert("提交成功！")
+    })
+    $(".last").on("click", function(){
+        $(this).addClass("active").parent().siblings().find("label").removeClass("active");
+    });
+    $(".center").on("click", function(){
+        $(this).addClass("active").parent().siblings().find("label").removeClass("active");
+    });
+    $(".first").on("click", function(){
+        $(this).addClass("active").parent().siblings().find("label").removeClass("active");
+    });
+</script>
+</html>

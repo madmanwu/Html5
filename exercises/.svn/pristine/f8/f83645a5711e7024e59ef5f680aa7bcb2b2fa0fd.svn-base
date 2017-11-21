@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <link type="text/css" rel="stylesheet" href="css/swiper.min.css"/>
+    <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link type="text/css" rel="stylesheet" href="css/common.css"/>
+    <link type="text/css" rel="stylesheet" href="css/reset.css"/>
+    <link type="text/css" rel="stylesheet" href="css/honey.css"/>
+</head>
+<body>
+
+<header>
+    <i class="fa fa-angle-left left"></i>
+    <span>蜜芽5周年领3000购物金</span>
+</header>
+<section>
+    <div class="top">
+        <button>立即领取</button>
+    </div>
+    <div class="box">
+        <div class="bottom">
+            <div class="title">
+                <p>--分享再抢<span>双重大礼--</span></p>
+            </div>
+            <div class="img">
+                <span>1</span>
+                <p><span class="tpp">朋友助力得<i>iPhone7</i></span>朋友圈的人气王们请注意，分享的购物金被使用的<span class="last">前三名</span>，就得iPhone7大奖</p>
+                <div>
+                    <img src="images/imgs/pin2.jpg" alt=""/>
+                    <p>3部iPhone7128G</p>
+                </div>
+
+            </div>
+            <div class="img">
+                <span>2</span>
+                <p><i color="red">现金红包</i><span class="tpp">领不停</span><span class="last">每五个朋友</span>领取你分享的购物金，就得<span class="last">现金红包</span>，领的越多红包越多！</p>
+                <div>
+                    <img src="images/imgs/pin3.jpg" alt=""/>
+                </div>
+            </div>
+            <div class="btns">
+                <button class="btn">马上去分享</button>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+</body>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript" src="js/zepto.js"></script>
+<script type="text/javascript" src="js/event.js"></script>
+<script type="text/javascript" src="js/ajax.js"></script>
+<script type="text/javascript">
+
+</script>
+</html>

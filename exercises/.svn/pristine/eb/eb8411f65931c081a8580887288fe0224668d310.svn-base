@@ -1,0 +1,145 @@
+body {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  display: -webkit-flex;
+  font-size: 0.12rem;
+  flex-direction: column;
+  background: #ffffff; }
+
+header .on {
+  width: 100%;
+  display: flex;
+  height: 0.35rem;
+  background: #1b1b20;
+  font-size: 0.14rem;
+  color: #ffffff;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0.11rem 0.1rem; }
+  header .on .left {
+    width: 0.37rem; }
+    header .on .left i {
+      margin-right: 0.03rem;
+      font-size: 0.16rem; }
+  header .on > .right {
+    width: 0.37rem;
+    text-align: right; }
+
+section {
+  overflow-y: auto;
+  flex: 1; }
+  section > p {
+    background: #ffffff;
+    box-sizing: border-box;
+    padding-left: 0.11rem;
+    width: 100%;
+    height: 0.39rem;
+    line-height: 0.39rem;
+    border-bottom: 0.01rem solid #ccc; }
+  section > .picture {
+    background: #ffffff;
+    margin-top: 0.04rem;
+    width: 100%;
+    height: 1.51rem;
+    border-top: 0.01rem solid #CCCCCC;
+    border-bottom: 0.01rem solid #CCCCCC; }
+    section > .picture .title {
+      border-bottom: 0.01rem solid #CCCCCC;
+      height: 0.26rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-left: 0.11rem;
+      padding-right: 0.11rem; }
+      section > .picture .title i {
+        padding-left: 0.11rem;
+        color: #CCCCCC; }
+    section > .picture .img {
+      box-sizing: border-box;
+      width: 100%;
+      height: 1.22rem;
+      padding: 0.08rem 0.11rem; }
+      section > .picture .img img {
+        width: 100%;
+        height: 100%; }
+  section .date {
+    background: #FFF;
+    padding-top: 0.2rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0.33rem;
+    padding-right: 0.32rem;
+    box-sizing: border-box; }
+    section .date div {
+      padding-left: 0.18rem;
+      flex: 1;
+      box-sizing: border-box;
+      width: 100%;
+      border-left: 0.01rem solid #2494ff;
+      position: relative; }
+      section .date div .circle {
+        display: block;
+        width: 0.19rem;
+        height: 0.19rem;
+        background: #2494ff;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 0.19rem;
+        position: absolute;
+        left: -0.1rem;
+        top: 0; }
+        section .date div .circle i {
+          color: #FFF; }
+      section .date div .time {
+        color: #CCCCCC; }
+      section .date div .man {
+        color: #CCC;
+        padding-top: 0.13rem; }
+      section .date div .dot {
+        width: 0.08rem;
+        height: 0.08rem;
+        position: absolute;
+        left: -0.05rem; }
+      section .date div .hollow {
+        width: 0.13rem;
+        height: 0.13rem;
+        position: absolute;
+        left: -0.06rem; }
+      section .date div .white {
+        width: 0.08rem;
+        height: 0.08rem;
+        background: #FFF;
+        border: 0.01rem solid #CCCCCC;
+        position: absolute;
+        left: -0.06rem; }
+      section .date div p {
+        display: flex;
+        justify-content: space-between; }
+    section .date .datum {
+      border-left: 0.01rem solid #CCCCCC; }
+  section .refer {
+    width: 100%;
+    height: 0.64rem; }
+    section .refer p {
+      color: #FFF;
+      position: absolute;
+      right: 0.12rem;
+      bottom: 0.33rem;
+      width: 0.62rem;
+      height: 0.62rem;
+      border-radius: 50%;
+      border: 0.03rem solid #d7f6df;
+      background: #35d261;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      section .refer p span {
+        margin-top: 0.01rem; }
+
+/*# sourceMappingURL=play.css.map */

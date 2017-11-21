@@ -1,0 +1,117 @@
+body {
+  background: #f9f9f9;
+  font-size: 0.12rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  display: -webkit-flex;
+  -webkit-flex-direction: column; }
+
+header {
+  background: #1b1b20; }
+  header .head {
+    height: 0.35rem;
+    font-size: 0.14rem;
+    color: #ffffff;
+    padding: 0.11rem 0.1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box; }
+    header .head .left {
+      width: 0.37rem; }
+      header .head .left i {
+        margin-right: 0.03rem;
+        font-size: 0.16rem; }
+    header .head > .right {
+      width: 0.37rem;
+      text-align: right; }
+
+section input {
+  border-width: 0;
+  outline: none;
+  height: 95%; }
+section .phone {
+  background: #FFF;
+  width: 100%;
+  height: 0.43rem;
+  border-bottom: 0.01rem solid #CCC;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 0.12rem;
+  box-sizing: border-box;
+  position: relative; }
+  section .phone input {
+    width: 85%; }
+  section .phone p {
+    position: absolute;
+    right: 0.21rem;
+    top: 0.12rem; }
+    section .phone p i {
+      font-size: 0.18rem; }
+section .number {
+  background: #FFF;
+  width: 100%;
+  height: 0.43rem;
+  border-bottom: 0.01rem solid #CCC;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 0.12rem;
+  box-sizing: border-box;
+  position: relative; }
+  section .number input {
+    width: 75%; }
+  section .number p {
+    margin-right: 0.12rem;
+    width: 0.8rem;
+    text-align: center;
+    line-height: 0.32rem;
+    height: 0.32rem;
+    border: 0.01rem solid #666666;
+    border-radius: 0.03rem;
+    position: absolute;
+    right: 0.12rem;
+    top: 0.03rem; }
+section .btn {
+  width: 100%;
+  padding-left: 0.13rem;
+  padding-right: 0.13rem;
+  box-sizing: border-box; }
+  section .btn button {
+    outline: none;
+    width: 100%;
+    height: 0.32rem;
+    margin-top: 0.17rem;
+    border: none;
+    color: #FFF;
+    background: #2494ff;
+    border-radius: 0.03rem; }
+
+.shade {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #666666;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%; }
+
+.box {
+  width: 2rem;
+  height: 2rem;
+  background: #f74d4d;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -1rem;
+  margin-top: -1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  .box p {
+    color: #000000; }
+
+/*# sourceMappingURL=log.css.map */

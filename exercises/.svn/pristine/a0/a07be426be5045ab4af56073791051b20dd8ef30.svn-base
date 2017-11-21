@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+        div {
+            width: 500px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+	<div id="mycharts"></div>
+</body>
+<script type="text/javascript" src="js/echarts.min.js"></script>
+<script type="text/javascript">
+	var mycharts = document.getElementById("mycharts");
+    var oCharts = echarts.init(mycharts);
+    option = {
+    legend: {
+        data:['高度(km)与气温(°C)变化关系']
+    },
+    tooltip : {
+        trigger: 'axis',
+        formatter: "Temperature : <br/>{b}km : {c}°C"
+    },
+    xAxis : [
+        {
+            type : 'value',
+            axisLabel : {
+                formatter: '{value} °C'
+            }
+        }
+    ],
+    yAxis : [
+        {
+            type : 'category',
+            axisLine : {onZero: false},
+            axisLabel : {
+                formatter: '{value} km'
+            },
+            boundaryGap : false,
+            data : ['0', '10', '20', '30', '40', '50', '60', '70', '80']
+        }
+    ],
+    series : [
+        {
+            name:'高度(km)与气温(°C)变化关系',
+            type:'line',
+            smooth:true,
+            itemStyle: {
+                normal: {
+                    lineStyle: {
+                        shadowColor : 'rgba(0,0,0,0.4)'
+                    }
+                }
+            },
+            data:[15, -50, -56.5, -46.5, -22.1, -2.5, -27.7, -55.7, -76.5]
+        }
+    ]
+};
+                    
+oCharts.setOption(option);                       
+</script>
+</html>

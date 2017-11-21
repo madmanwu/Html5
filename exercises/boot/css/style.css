@@ -1,0 +1,29 @@
+body {
+  font-size: 0.12rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column; }
+
+section {
+  flex: 1;
+  overflow-y: auto; }
+  section .slide .item {
+    height: 1.5rem; }
+    section .slide .item img {
+      width: 100%;
+      height: 100%; }
+  section .main li {
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem; }
+    section .main li i {
+      color: #f09; }
+    section .main li span {
+      display: block; }
+
+footer .container .row {
+  line-height: 0.37rem; }
+
+/*# sourceMappingURL=style.css.map */

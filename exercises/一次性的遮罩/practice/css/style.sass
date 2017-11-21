@@ -1,0 +1,122 @@
+body
+  font-size: .12rem
+  position: absolute
+  top: 0
+  bottom: 0
+  width: 100%
+  display: -webkit-flex
+  -webkit-flex-direction: column
+
+.mark
+  position: absolute
+  width: 100%
+  height: 100%
+  z-index: 999
+  background: rgba(255,0,0,.3)
+  & > img
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    margin: auto
+
+.header
+  height: .9rem
+  background: #00a0f0
+  & > .header-top
+    height: .25rem
+    line-height: .25rem
+    & > span
+      font-size: 14px
+      text-shadow: 0 0 10px #333
+    & > a
+      font-weight: 600
+  & > .header-center
+    margin-bottom: 6px
+  & > .header-bottom
+    & > a
+      box-sizing: border-box
+      font-size: 14px
+      display: inline-block
+      padding: 3px 15px
+      border-radius: 30px
+      background: #fff
+      color: #00a0f0
+
+.section
+  -webkit-flex: 1
+  overflow-y: auto
+  background: #f6f6f6
+  & > .credit
+    height: 70px
+    & > div:nth-child(2)
+      position: relative
+      & > b
+        z-index: 888
+        position: absolute
+        top: 3px
+        left: 50%
+        width: 55px
+        height: 20px
+        line-height: 20px
+        font-weight: normal
+        box-sizing: border-box
+        background: #f56258
+        color: #fff
+        border-radius: 15px
+
+    & > div
+      background: #fff
+      box-sizing: border-box
+      padding-top: 10px
+      padding-bottom: 10px
+      & > span
+        margin-top: 5px
+        display: block
+
+  & > .loan
+    height: 195px
+    margin-top: 6px
+    background: #fff
+    & > .loan-top
+      border-bottom: 1px solid #ccc
+      height: 25px
+      line-height: 25px
+      & > span
+        & > i
+          margin-right: 5px
+      & > a
+        & > i
+          margin-left: 5px
+    & > .list
+      background: #fff
+      box-sizing: border-box
+      & > li
+        height: 85px
+        border-bottom: 1px solid #ddd
+        line-height: 30px
+        & > .list-content
+          & > li:first-child
+            & > span:last-child
+              & > i
+                margin-right: 5px
+
+
+  
+.footer
+  height: .48rem
+  box-sizing: border-box
+  border-top: 1px solid #ccc
+  & > div
+    box-sizing: border-box
+    margin-top: 3px
+    & > span:first-child
+      box-sizing: border-box
+      display: inline-block
+      width: 22px
+      height: 22px
+      border-radius: 50%
+      border: 1px solid #8d8d8d
+    & > span:last-child
+      display: block

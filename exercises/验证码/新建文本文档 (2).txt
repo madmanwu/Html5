@@ -1,0 +1,18 @@
+$(function(){
+    //localStorage.removeItem("isDialog");
+    console.log(!localStorage.getItem("isDialog"));
+    if(!localStorage.getItem("isDialog")){
+        $(".mark").css("display","block");
+        $("#mark").on("click",function(){
+            $(this).parent().css("display","none");
+            localStorage.setItem("isDialog","none");
+        })
+    }else{
+        $(".mark").css("display","none");
+    }
+})
+
+
+<div class="mark">
+    <img src="image/mark.png" alt="mark" id="mark"/>
+</div>

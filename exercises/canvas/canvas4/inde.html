@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <link type="text/css" rel="stylesheet" href="css/swiper.min.css"/>
+    <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link type="text/css" rel="stylesheet" href="css/common.css"/>
+    <link type="text/css" rel="stylesheet" href="css/reset.css"/>
+    <link type="text/css" rel="stylesheet" href="css/style.css"/>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #canvas{
+            border: 1px solid #cccccc;
+            background: pink;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+
+<canvas id="canvas" width = "500" height = "300"></canvas>
+
+</body>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript" src="js/zepto.js"></script>
+<script type="text/javascript" src="js/event.js"></script>
+<script type="text/javascript" src="js/ajax.js"></script>
+<script type="text/javascript">
+    var oCanvas = document.getElementById("canvas");
+    var oContext = oCanvas.getContext("2d");
+
+    var data = {
+        x: ['1月', '2月', '3月', '4月', '5月', '6月'],
+        y: [0, 200, 400, 600, 800, 1000],
+        z: [0, 30, 80, 20, 60,10]
+    };
+
+    function line(starX, starY, endX, endY){
+        oContext.moveTo(starX, starY);
+        oContext.lineTo(endX, endY);
+        oContext.stroke();
+    };
+
+    line(30,30,30,270);
+    line(30,270,470,270);
+    drawn();
+    scale();
+
+    function drawn(){
+        for (var i = 0; i < data.z.length; i++) {
+//            console.log(i);
+            oContext.beginPath();
+            oContext.moveTo(50*i + 50, oCanvas.height -100-  data.z[i]);
+            oContext.lineTo(50*(i+1) + 50, oCanvas.height - 100 - data.z[i+1]);
+            oContext.fillText(data.x[i], 44+50 * i, 286);
+            oContext.strokeStyle = "#666"
+            oContext.stroke();
+            oContext.beginPath();
+            oContext.arc(50*i + 50, oCanvas.height - 100 -data.z[i], 10 ,0, 2*Math.PI);
+            oContext.stroke();
+            oContext.fillStyle = "#000";
+            oContext.fill();
+            oContext.closePath();
+        }
+    }
+    function scale() {
+        for (var i = 0; i < data.y.length; i++) {
+            oContext.textAlign = "right";
+            oContext.fillText(data.y[i], 25, 205 - 35 * i);
+            oContext.stroke();
+        }
+    }
+</script>
+</html>

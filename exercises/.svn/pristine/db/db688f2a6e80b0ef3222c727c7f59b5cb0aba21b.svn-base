@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #myCanvas{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            border: 1px solid #666;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="myCanvas" width="700" height="500"></canvas>
+</body>
+<script type="text/javascript">
+    var data = [35, 50, 15,5];
+    var col = ["green", "blue", "pink", "orange"];
+    var txt = ["爱", "恨", "情", "仇"];
+
+    var oCanvas = document.getElementById("myCanvas");
+    var oContext = oCanvas.getContext("2d");
+    var centerX = oCanvas.width/2;
+    var centerY = oCanvas.height/2;
+    var radio = oCanvas.height/2;
+
+    function drawnCirle(){
+        var start = 0;
+        var end = 0;
+        var PI = Math.PI;
+        oContext.strokeStyle = "transparent";
+        for(var i=0;i<data.length;i++){
+            oContext.beginPath();
+            end = (2*PI)/100*data[i]+start;
+            oContext.fillStyle = col[i];
+            oContext.moveTo(centerX,centerY);
+            oContext.arc(centerX,centerY,radio,start,end);
+
+            oContext.fillText(txt[i],60,30+20*i,20,10);
+            oContext.fillRect(30,20+20*i,20,10);
+
+            oContext.fill();
+            oContext.stroke();
+            oContext.closePath();
+            start = end;
+        }
+    }
+    drawnCirle();
+</script>
+</html>

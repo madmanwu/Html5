@@ -1,0 +1,53 @@
+body {
+  font-size: 0.12rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  display: -webkit-flex;
+  -webkit-flex-direction: column; }
+
+.header {
+  height: 0.47rem;
+  line-height: 0.47rem;
+  background: #c80a0f;
+  position: relative;
+  text-align: center;
+  color: #fff; }
+  .header > i {
+    position: absolute;
+    top: 10px;
+    left: 10px; }
+  .header > h3 {
+    font-weight: normal; }
+
+.section {
+  -webkit-flex: 1; }
+  .section ul {
+    margin-top: 0.24rem;
+    height: 0.64rem;
+    display: flex;
+    justify-content: space-around; }
+    .section ul li {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .section ul li p {
+        margin-top: 0.08rem; }
+      .section ul li span {
+        display: block;
+        width: 0.42rem;
+        height: 0.42rem;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 0.45rem;
+        border: 0.01rem solid #f2f2f2; }
+        .section ul li span i {
+          font-size: 0.22rem; }
+        .section ul li span .sun {
+          color: #20c023; }
+        .section ul li span .weixin {
+          color: #54e5f3; }
+
+/*# sourceMappingURL=recommend.css.map */

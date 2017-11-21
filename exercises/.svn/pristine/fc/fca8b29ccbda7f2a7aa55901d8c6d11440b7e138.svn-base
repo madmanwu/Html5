@@ -1,0 +1,134 @@
+body
+  background: #f9f9f9
+  font-size: .12rem
+  position: absolute
+  top: 0
+  bottom: 0
+  width: 100%
+  display: -webkit-flex
+  -webkit-flex-direction: column
+
+header
+  background: #1b1b20
+  .head
+    height: 0.35rem
+    font-size: 0.14rem
+    color: #ffffff
+    padding: 0.11rem 0.1rem
+    display: flex
+    justify-content: space-between
+    align-items: center
+    box-sizing: border-box
+    .left
+      width: 0.37rem
+      i
+        margin-right: 0.03rem
+        font-size: 0.16rem
+    & > .right
+      width: 0.37rem
+      text-align: right
+
+section
+  flex: 1
+  overflow-y: auto
+  .back
+    width: 100%
+    height: 1.15rem
+    background: url("../images/icons/icons1.jpg")no-repeat
+    background-size: 100%
+    margin-bottom: 0.04rem
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    p
+      width: 0.55rem
+      height: 0.55rem
+      text-align: center
+      img
+        width: 100%
+        height: 100%
+        border-radius: 50%
+    span
+      color: #FFF
+      margin-top: 0.11rem
+  .top
+    margin-bottom: 0.04rem
+    border-top: 0.01rem solid #e3e3e3
+    border-bottom: 0.01rem solid #e3e3e3
+    width: 100%
+    height: 1.72rem
+    background: #ffffff
+    display: flex
+    flex-direction: column
+    padding-left: 0.11rem
+    padding-right: 0.11rem
+    box-sizing: border-box
+    li
+      width: 100%
+      flex: 1
+      border-bottom: 0.01rem solid #e3e3e3
+      color: #767676
+      a
+        height: 100%
+        font-size: 0.14rem
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: space-between
+        & > i
+          color: #eaeaea
+        p
+          i
+            margin-right: 0.06rem
+
+  .bottom
+    margin-bottom: 0.04rem
+    border-top: 0.01rem solid #e3e3e3
+    width: 100%
+    height: 1.29rem
+    background: #ffffff
+    display: flex
+    flex-direction: column
+    padding-left: 0.11rem
+    box-sizing: border-box
+    li
+      width: 100%
+      flex: 1
+      border-bottom: 0.01rem solid #e3e3e3
+      color: #767676
+      a
+        height: 100%
+        font-size: 0.14rem
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: space-between
+        & > i
+          color: #eaeaea
+        p
+          i
+            margin-right: 0.06rem
+
+
+footer
+  width: 100%
+  ul
+    width: 100%
+    background: #FFF
+    height: 0.41rem
+    display: flex
+    border-top: 0.01rem solid #ededed
+    justify-content: center
+    align-items: center
+    li
+      padding-top: 0.05rem
+      padding-bottom: 0.05rem
+      flex: 1
+      a
+        justify-content: center
+        display: flex
+        flex-direction: column
+        align-items: center
+      .active
+        color: #138bf0

@@ -1,0 +1,105 @@
+body {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  font-size: 0.14rem;
+  display: flex;
+  flex-direction: column; }
+
+header {
+  padding-left: 0.09rem;
+  padding-right: 0.09rem;
+  border-bottom: 0.01rem solid #CCC; }
+  header .head {
+    display: flex;
+    border-radius: 0.03rem;
+    background: #e4e8eb;
+    align-items: center;
+    padding: 0 0.08rem;
+    margin-top: 0.05rem;
+    margin-bottom: 0.05rem; }
+    header .head input {
+      margin-left: 0.06rem;
+      width: 100%;
+      height: 0.22rem;
+      background: #e4e8eb;
+      outline: none;
+      border-width: 0; }
+
+section {
+  position: relative;
+  overflow-y: auto;
+  flex: 1;
+  display: flex; }
+  section .aside-left {
+    width: 0.8rem;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 999; }
+    section .aside-left li {
+      padding: 0.15rem 0.15rem;
+      background: #f6f6f6;
+      font-size: 0.12rem; }
+    section .aside-left .active {
+      background: none;
+      border-left: 0.01rem solid #dd7296; }
+  section .aside-right {
+    padding-left: 0.88rem;
+    box-sizing: border-box;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0; }
+    section .aside-right .banner {
+      margin: 0.08rem; }
+      section .aside-right .banner .swiper-slide {
+        height: 0.75rem; }
+        section .aside-right .banner .swiper-slide img {
+          width: 100%;
+          height: 100%; }
+    section .aside-right .title {
+      font-size: 0.1rem;
+      padding-left: 0.08rem;
+      margin-top: 0.21rem;
+      margin-bottom: 0.21rem; }
+    section .aside-right .bottom .swiper-slide {
+      display: flex;
+      flex-wrap: wrap; }
+      section .aside-right .bottom .swiper-slide li {
+        margin-top: 0.06rem;
+        width: 33.33%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-size: 0.1rem; }
+        section .aside-right .bottom .swiper-slide li img {
+          width: 0.35rem;
+          height: 0.55rem; }
+
+footer ul {
+  display: flex;
+  border-top: 0.01rem solid #CCCCCC; }
+  footer ul li {
+    flex: 1;
+    padding-top: 0.06rem;
+    padding-bottom: 0.06rem; }
+    footer ul li a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+    footer ul li .begin {
+      color: #fa529f; }
+      footer ul li .begin i {
+        font-size: 0.16rem; }
+      footer ul li .begin span {
+        margin-top: 0.04rem;
+        font-size: 0.12rem; }
+
+/*# sourceMappingURL=style.css.map */

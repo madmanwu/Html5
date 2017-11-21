@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <link type="text/css" rel="stylesheet" href="css/swiper.min.css"/>
+    <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link type="text/css" rel="stylesheet" href="css/common.css"/>
+    <link type="text/css" rel="stylesheet" href="css/reset.css"/>
+    <link type="text/css" rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+    <div class="slide-left">
+
+    </div>
+
+    <div class="slide-right">
+        <div class="banner swiper-container">
+            <div class="swiper-wrapper">
+                <div class="banner-slide swiper-slide">
+                    <a href="#"><img src="images/banner/banner1.jpg" alt=""/></a>
+                </div>
+                <div class="banner-slide swiper-slide">
+                    <a href="#"><img src="images/banner/banner2.jpg" alt=""/></a>
+                </div>
+                <div class="banner-slide swiper-slide">
+                    <a href="#"><img src="images/banner/banner3.jpg" alt=""/></a>
+                </div>
+                <div class="banner-slide swiper-slide">
+                    <a href="#"><img src="images/banner/banner4.jpg" alt=""/></a>
+                </div>
+                <div class="banner-slide swiper-slide">
+                    <a href="#"><img src="images/banner/banner5.jpg" alt=""/></a>
+                </div>
+            </div>
+            <div class="banner-pagination swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+
+
+</body>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript" src="js/zepto.js"></script>
+<script type="text/javascript" src="js/event.js"></script>
+<script type="text/javascript" src="js/ajax.js"></script>
+<script type="text/javascript">
+    var mySwiper = new Swiper(".banner", {
+        loop:true,
+        pagination: '.swiper-pagination',
+        prevButton: '.swiper-button-prev',
+        nextButton: '.swiper-button-next'
+    })
+</script>
+</html>

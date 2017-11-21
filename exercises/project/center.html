@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <link type="text/css" rel="stylesheet" href="css/swiper.min.css"/>
+    <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link type="text/css" rel="stylesheet" href="css/common.css"/>
+    <link type="text/css" rel="stylesheet" href="css/reset.css"/>
+    <link type="text/css" rel="stylesheet" href="css/center.css"/>
+</head>
+<body>
+<header>
+    <div class="head">
+        <p class="left"><i class="fa fa-angle-left"></i>返回</p>
+        <p>个人中心</p>
+        <i class="fa fa-ellipsis-h right"></i>
+    </div>
+
+</header>
+<section>
+    <div class="back">
+        <p><img src="images/imgs/img1.jpg" alt=""/></p>
+        <span>wuman</span>
+    </div>
+    <ul class="top">
+        <li class="first">
+            <a href="my.html">
+                <p><i class="fa fa-user-circle-o"></i>我的资料</p>
+                <i class="fa fa-angle-right"></i>
+            </a>
+
+        </li>
+        <li>
+            <a href="idea.html">
+                <p><i class="fa fa-bandcamp"></i>我的评估结果</p>
+                <i class="fa fa-angle-right"></i>
+            </a>
+        </li>
+
+        <li>
+            <a href="">
+                <p><i class="fa fa-eercast"></i>我的专属管家</p>
+                <i class="fa fa-angle-right"></i>
+            </a>
+        </li>
+        <li style="border: none">
+            <a href="plan.html">
+                <p><i class="fa fa-chrome"></i>我的进度</p>
+                <i class="fa fa-angle-right"></i>
+            </a>
+        </li>
+    </ul>
+    <ul class="bottom">
+        <li>
+            <a href="">
+                <p><i class="fa fa-gg-circle"></i>意见反馈</p>
+                <i class="fa fa-angle-right"></i>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <p><i class="fa fa-ge (alias)"></i>关于我们</p>
+                <i class="fa fa-angle-right"></i>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <p><i class="fa fa-gratipay"></i>在线咨询</p>
+            </a>
+        </li>
+    </ul>
+</section>
+<footer>
+    <ul class="list">
+        <li>
+            <a href="log.html">
+                <i class="fa fa-gg"></i>
+                <span>首页</span>
+            </a>
+        </li>
+        <li>
+            <a href="plan.html">
+                <i class="fa fa-forumbee"></i>
+                <span>移民项目</span>
+            </a>
+        </li>
+        <li>
+            <a href="center.html" class="active">
+                <i class="fa fa-user"></i>
+                <span>个人中心</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <i class="fa fa-phone"></i>
+                <span>联系我们</span>
+            </a>
+        </li>
+    </ul>
+</footer>
+</body>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript" src="js/zepto.js"></script>
+<script type="text/javascript" src="js/event.js"></script>
+<script type="text/javascript" src="js/ajax.js"></script>
+<script type="text/javascript">
+    $(".list").on("click", "a" , function(){
+        $(this).addClass("active").parent().siblings().find("a").removeClass("active")
+    });
+    $(".active").on("click", function(){
+        location.href = "center.html";
+    })
+</script>
+</html>

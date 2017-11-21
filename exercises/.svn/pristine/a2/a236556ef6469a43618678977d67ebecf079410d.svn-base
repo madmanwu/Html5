@@ -1,0 +1,22 @@
+[
+  {
+    "imgs":"images/imgs/imgs1.jpg",
+    "title":"医生说|治疗慢性胃炎，膏方调养有特色",
+    "desc":"程艳梅 上海中医药大学附属岳阳中学"
+  },
+  {
+    "imgs":"images/imgs/imgs2.jpg",
+    "title":"医生说|提防慢性肾脏病，膏方滋补效果佳",
+    "desc":"徐艳秋 上海中医药大学附属岳阳中学"
+  },
+  {
+    "imgs":"images/imgs/imgs3.jpg",
+    "title":"医生说|“三管齐下”治疗白癜风，告别白色阴影",
+    "desc":"周勇 中国人民解放军总医院301医院"
+  },
+  {
+    "imgs":"images/imgs/imgs4.jpg",
+    "title":"医生说|药物+手术，征服帕金森病！",
+    "desc":"大傻 北京八维研修学院网站工程"
+  }
+]

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width,initial-scale=2,maximum-scale=1,user-scalable=no">
+    <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="css/animate.css">
+    <link type="text/css" rel="stylesheet" href="css/reset.css">
+    <link type="text/css" rel="stylesheet" href="css/common.css">
+    <link type="text/css" rel="stylesheet" href="css/swiper.min.css">
+    <link type="text/css" rel="stylesheet" href="css/dialog.css">
+</head>
+<body>
+<div class="content">
+    <button class="btns">按钮</button>
+</div>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript" src="js/zepto.js"></script>
+<script type="text/javascript" src="js/event.js"></script>
+<script type="text/javascript" src="js/dialog.js"></script>
+<script type="text/javascript">
+    $(".btns").on("click",function(){
+        $(this).dialog({
+            width:"200px",
+            height:"200px",
+            titles:"这是一个弹出框",
+            content:"are you sure?",
+            btns:["确认","取消"],
+            anima:"fadeIn"
+        });
+    })
+</script>
+</body>
+</html>

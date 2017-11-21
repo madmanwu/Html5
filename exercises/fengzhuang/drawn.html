@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<canvas id="chart" width="800" height="650" style="border:1px solid #ccc;margin-top: 30px"></canvas>
+<canvas id="graph" width="800" height="650" style="border:1px solid #ccc;margin-top: 30px"></canvas>
+<canvas id="lines" width="800" height="650" style="border:1px solid #ccc;margin-top: 30px"></canvas>
+<script type="text/javascript">
+    function Fun(drawnCanvas) {
+        this.drawnCanvas = document.getElementById(drawnCanvas);
+        this.oPI = Math.PI * 2;
+        this.oStart = 0;
+        this.oEnd = 0;
+
+        this.data = {
+            scale: [0.05, 0.25, 0.6, 0.1],
+            color: ["blue", "orange", "pink", "green","purple","red","yellow","pink"],
+            txt: ["春", "夏", "秋", "冬"],
+            week: ["星期一", "星期二", "星期三", "星期四", "星期五", "星期六", "星期日"],
+            sorce: ["100", "200", "300", "400", "500"],
+            get: ["100", "200", "200", "400", "300", "100", "300"]
+        };
+    }
+    Fun.prototype = {
+        drawn: function () {
+            this.con.moveTo(50, 50);
+            this.con.lineTo(50, 570);
+            this.con.lineTo(750, 570);
+            this.con.stroke();
+        },
+        chart: function(){
+            this.con = this.drawnCanvas.getContext("2d");
+            for (var i = 0; i < this.data.scale.length; i++) {
+                this.con.beginPath();
+                this.con.moveTo(450, 300);
+                this.oEnd = this.oPI * this.data.scale[i] + this.oStart;
+                this.con.arc(450, 300, 150, this.oStart, this.oEnd);
+                this.con.fillStyle = this.data.color[i];
+                this.con.fill();
+                this.con.closePath();
+                this.oStart = this.oEnd;
+
+                this.con.fillStyle = this.data.color[i];
+                this.con.fillRect(100, 15 + 40 * i, 65, 10);
+                this.con.fillText(this.data.txt[i], 80, 25 + 40 * i);
+            }
+        },
+        graph: function(){
+            this.con = this.drawnCanvas.getContext("2d");
+            this.drawn();
+            for (var i = 0; i <= this.data.sorce.length - 1; i++) {
+                this.con.fillText(this.data.sorce[i], 20, 650 - 80 - this.data.sorce[i]);
+            }
+            for (var i = 0; i < this.data.week.length; i++) {
+                this.con.beginPath();
+                this.con.lineWidth = '40';
+                this.con.strokeStyle = this.data.color[i];
+                this.con.moveTo(130 + 80 * i, 650 - 80 - this.data.get[i]);
+                this.con.lineTo(130 + 80 * i, 570);
+                this.con.stroke();
+
+                this.con.fillText(this.data.week[i], 110 + 80 * i, 600);
+                this.con.closePath();
+            }
+        },
+        line: function () {
+            this.con = this.drawnCanvas.getContext("2d");
+            this.drawn();
+            for (var i = 0; i < this.data.week.length; i++) {
+                this.con.beginPath();
+
+                this.con.moveTo(130 + 80 * i, 650 - 80 - this.data.get[i]);
+                this.con.lineTo(130 + 80 * (i + 1), 650 - 80 - this.data.get[i + 1]);
+
+                this.con.arc(130 + 80 * i, 650 - 80 - this.data.get[i], 5, 0, 2 * Math.PI);
+                this.con.fillStyle = "#f00";
+                this.con.fillText(this.data.get[i], 130 + 80 * i, 650 - 80 - this.data.get[i]);
+                this.con.fill();
+
+                this.con.fillText(this.data.week[i], 110 + 80 * i, 610);
+                this.con.fillText(this.data.sorce[i], 20, 650 - 80 - this.data.sorce[i]);
+
+                this.con.stroke();
+                this.con.closePath();
+            }
+        }
+    };
+   var drawnChart = new Fun("chart");
+   drawnChart.chart();
+   var drawnGraph = new Fun("graph");
+   drawnGraph.graph();
+   var drawnLine = new Fun("lines");
+   drawnLine.line();
+
+</script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+body
+  font-size: 0.12rem
+  width: 100%
+  top: 0
+  bottom: 0
+  position: absolute
+  display: flex
+  flex-direction: column
+header
+  padding-top: 0.11rem
+  padding-bottom: 0.11rem
+  background: #343439
+  padding-right: 0.14rem
+  text-align: center
+  font-size: 0.14rem
+  color: #ffffff
+  div
+    display: inline
+  span
+    position: absolute
+    right: 0.14rem
+section
+  overflow-y: auto
+  flex: 1
+  .search
+    padding: 0.06rem 0.07rem
+    background: #efeff4
+    input
+      text-align: center
+      height: 0.20rem
+      border-radius: 0.03rem
+      width: 100%
+      border-width: 0
+      outline: none
+      position: relative
+    //.middle
+    //  z-index: 999
+    //  position: absolute
+    //  left: 1.8rem
+    //  top: -0.02rem
+    //.last
+    //  position: absolute
+    //  right: 0
+    //  top: 0.02rem
+  .user
+    div
+      position: relative
+      background: #ffffff
+      z-index: 9999
+      padding: 0.06rem 0
+      height: 0.49rem
+      border-bottom: 0.01rem solid #f6f6f6
+      .picture
+        margin-right: 0.06rem
+        text-align: left
+        height: 0.38rem
+        width: 0.38rem
+        img
+          width: 0.38rem
+          border-radius: 0.05rem
+          margin-left: -0.08rem
+          height: 0.38rem
+      .man
+        z-index: 999
+        span
+          display: block
+        .name
+          color: #000000
+          font-size: 0.14rem
+        .content
+          color: #808080
+          font-size: 0.10rem
+          overflow: hidden
+          text-overflow: ellipsis
+          white-space: nowrap
+      .time
+        text-align: right
+
+  .del
+    display: none
+    width: 1.32rem
+    background: red
+    height: 0.49rem
+    line-height: 0.49rem
+    color: #ffffff
+    position: absolute
+    right: 0
+    top: -0.02rem
+    z-index: -1
+    span
+      display: inline-block
+    .top
+      width: 0.76rem
+      text-align: center
+      background: #c7c7cc
+    .last
+      width: 0.52rem
+      text-align: center
+
+
+
+
+footer
+  .container
+    border-top: 0.01rem solid #CCCCCC
+    .row
+      div
+        text-align: center
+        i
+          font-size: 0.16rem
+          display: block
+          padding-top: 0.03rem
+          padding-bottom: 0.03rem
+        span
+          font-size: 0.10rem
+          margin-bottom: 0.03rem
+      .active
+        color: #1aad19
+
+
+
+

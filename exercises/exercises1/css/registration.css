@@ -1,0 +1,307 @@
+body {
+  width: 100%;
+  font-size: 0.14rem;
+  background: #f9f9f9;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column; }
+
+header {
+  width: 100%;
+  line-height: 0.35rem;
+  text-align: center;
+  background: #FFF; }
+  header h2 {
+    font-size: 0.14rem;
+    font-weight: normal; }
+
+section {
+  flex: 1;
+  overflow-y: auto; }
+  section > .search {
+    margin-top: -0.4rem;
+    box-sizing: border-box;
+    position: relative;
+    top: 0.4rem;
+    left: 0;
+    z-index: 999;
+    height: 0.38rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0.05rem;
+    padding-right: 0.05rem;
+    width: 100%; }
+    section > .search > .middle {
+      opacity: 0.8;
+      line-height: 0.26rem;
+      padding-left: 0.09rem;
+      padding-right: 0.09rem;
+      background: #f3f3f3;
+      width: 100%;
+      height: 0.26rem;
+      border-radius: 0.15rem; }
+      section > .search > .middle > .ipt {
+        width: 90%;
+        outline: none;
+        border-width: 0;
+        background: #f3f3f3; }
+  section .swiper-slide {
+    height: 2rem;
+    overflow: hidden; }
+    section .swiper-slide img {
+      width: 100%;
+      height: 100%; }
+  section .nav {
+    background: #FFF;
+    margin-bottom: 0.02rem;
+    position: relative;
+    width: 100%;
+    height: 0.94rem;
+    display: flex; }
+    section .nav > div {
+      margin-top: 0.15rem;
+      flex: 1;
+      text-align: center; }
+      section .nav > div > span {
+        display: inline-block;
+        width: 0.4rem;
+        line-height: 0.4rem;
+        background: #01ff70;
+        border-radius: 50%;
+        color: #FFF; }
+      section .nav > div > div {
+        position: absolute;
+        right: 41%;
+        top: 0.16rem;
+        width: 0.24rem;
+        line-height: 0.15rem;
+        border: 0.01rem solid #CCC;
+        color: #CCCCCC;
+        background: #f9fdfc;
+        border-radius: 0.07rem;
+        text-align: center; }
+      section .nav > div > p {
+        margin-top: 0.13rem; }
+  section .top-line {
+    margin-bottom: 0.12rem;
+    width: 100%;
+    height: 0.86rem;
+    background: #FFF;
+    display: flex;
+    padding: 0 0.31rem;
+    box-sizing: border-box;
+    padding-top: 0.19rem;
+    padding-bottom: 0.19rem; }
+    section .top-line i {
+      color: #e87928; }
+    section .top-line span {
+      display: inline-block;
+      width: 0.06rem;
+      height: 0.06rem;
+      background: #b8cfe1; }
+    section .top-line dt {
+      flex: 1;
+      border-right: 0.01rem solid #CCC; }
+      section .top-line dt img {
+        padding-right: 0.08rem; }
+    section .top-line dd {
+      box-sizing: border-box;
+      margin-left: 0.15rem;
+      flex: 2;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden; }
+  section .answers {
+    width: 100%;
+    height: 0.96rem;
+    background: #ffffff;
+    display: flex;
+    padding-left: 0.09rem;
+    padding-right: 0.09rem;
+    box-sizing: border-box; }
+    section .answers div {
+      display: flex;
+      line-height: 0.23rem; }
+      section .answers div img {
+        width: 40%; }
+    section .answers span {
+      display: block; }
+    section .answers .left {
+      width: 50%;
+      border-right: 0.01rem solid #CCC; }
+    section .answers .right {
+      width: 50%; }
+      section .answers .right p {
+        margin-left: 0.09rem; }
+    section .answers .circle {
+      display: block;
+      width: 0.3rem;
+      line-height: 0.14rem;
+      border: 0.01rem solid #e87928;
+      border-radius: 0.05rem;
+      padding: 0.03rem 0.08rem;
+      color: #e87928; }
+  section .list {
+    width: 100%;
+    height: 0.96rem;
+    background: #ffffff;
+    border-top: 0.01rem solid #CCC;
+    border-bottom: 0.01rem solid #CCC;
+    display: flex;
+    margin-bottom: 0.07rem; }
+    section .list div {
+      text-align: center;
+      flex: 1;
+      border-right: 0.01rem solid #CCC;
+      padding-top: 0.1rem;
+      padding-bottom: 0.1rem; }
+  section .more {
+    width: 100%;
+    height: 0.34rem;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 0.09rem;
+    padding-right: 0.09rem;
+    box-sizing: border-box;
+    border-bottom: 0.01rem solid #CCC; }
+    section .more p {
+      font-size: 0.14rem; }
+    section .more span {
+      font-size: 0.12rem;
+      color: #666; }
+      section .more span i {
+        font-size: 0.18rem;
+        color: #CCC; }
+  section .home {
+    width: 100%;
+    height: 1.61rem;
+    border-bottom: 0.01rem solid #CCCCCC;
+    display: flex;
+    background: #FFF;
+    padding-left: 0.11rem;
+    padding-right: 0.11rem;
+    box-sizing: border-box; }
+    section .home .home-left {
+      width: 40%;
+      height: 100%;
+      border-right: 0.01rem solid #CCC; }
+      section .home .home-left img {
+        width: 70%;
+        height: 50%;
+        margin-left: 0.23rem;
+        margin-top: 0.23rem; }
+      section .home .home-left > h3 {
+        font-size: 0.17rem;
+        color: #e87928; }
+    section .home .home-right {
+      width: 60%;
+      height: 100%; }
+      section .home .home-right .home-top {
+        padding-top: 0.11rem;
+        padding-left: 0.11rem;
+        padding-right: 0.11rem;
+        border-bottom: 0.01rem solid #CCC;
+        box-sizing: border-box; }
+        section .home .home-right .home-top div {
+          display: flex;
+          flex-direction: column; }
+      section .home .home-right .home-last {
+        padding-top: 0.11rem;
+        padding-left: 0.11rem;
+        padding-right: 0.11rem;
+        box-sizing: border-box; }
+        section .home .home-right .home-last > div {
+          display: flex;
+          flex-direction: column; }
+      section .home .home-right img {
+        width: 40%;
+        height: 90%; }
+      section .home .home-right div {
+        width: 100%;
+        height: 50%;
+        display: flex; }
+  section > .wrap {
+    height: 1rem;
+    border-bottom: 1px solid #ccc;
+    overflow: hidden;
+    background: #FFF; }
+    section > .wrap > .swiper-container {
+      height: 100%;
+      width: 100%;
+      padding: 0.1rem; }
+      section > .wrap > .swiper-container span {
+        border: 0.01rem solid #d3d8db;
+        background: #f4f9ff;
+        border-radius: 0.15rem;
+        color: #677ad6;
+        padding: 0.1rem 0.1rem;
+        display: inline-block;
+        margin-bottom: 0.05rem; }
+  section .img {
+    width: 100%;
+    height: 0.61rem;
+    margin-top: 0.08rem;
+    margin-bottom: 0.08rem; }
+    section .img img {
+      width: 100%; }
+  section .title {
+    height: 0.35rem;
+    line-height: 0.35rem;
+    display: -webkit-flex;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding-left: 0.08rem;
+    padding-right: 0.08rem;
+    background: #FFF; }
+    section .title > li {
+      width: 25%;
+      text-align: center; }
+    section .title > .active {
+      border-bottom: 1px solid #2f4bb9;
+      color: #2f4bb9; }
+  section > .doctor-list {
+    margin-top: 0.08rem;
+    border-top: 0.01rem solid #f3f3f3;
+    background: #FFF;
+    padding-left: 0.1rem;
+    padding-top: 0.1rem; }
+    section > .doctor-list > dl {
+      display: -webkit-flex;
+      border-bottom: 0.01rem solid #f3f3f3; }
+      section > .doctor-list > dl > dt {
+        -webkit-flex: 1; }
+        section > .doctor-list > dl > dt img {
+          height: 100%; }
+      section > .doctor-list > dl > dd {
+        line-height: 0.33rem;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        box-sizing: border-box;
+        -webkit-flex: 2; }
+        section > .doctor-list > dl > dd h3 {
+          font-size: 0.12rem;
+          font-weight: normal; }
+
+footer {
+  width: 100%; }
+  footer > .foot {
+    color: #575757;
+    padding-top: 0.04rem;
+    padding-bottom: 0.04rem;
+    display: flex;
+    width: 100%;
+    background: #f8f8f8; }
+    footer > .foot > a {
+      flex: 1;
+      text-align: center;
+      height: 0.35rem; }
+      footer > .foot > a > span {
+        display: block; }
+
+/*# sourceMappingURL=registration.css.map */

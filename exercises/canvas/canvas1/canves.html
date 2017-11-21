@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #myCanvas {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            border: 1px solid #CCCCCC;
+        }
+    </style>
+</head>
+<body>
+<canvas id="myCanvas" width="500" height="500">
+
+</canvas>
+</body>
+<script type="text/javascript">
+    var oCanvas = document.getElementById("myCanvas");
+    var oContext = oCanvas.getContext("2d");
+    var tectX = oCanvas.width / 2 - 100 / 2;
+    var tectY = oCanvas.height / 2 - 100 / 2;
+
+    drawnMaxCircle();
+    drawnLine(0, 0, 500, 500);
+    drawnLine(500, 0, 0, 500);
+    drawnRect("red", tectX, tectY, 100, 100);
+
+    function drawnRect(color,x,y,w,h){
+        oContext.fillStyle = color;
+        oContext.fillRect(x, y, w, h);
+    }
+
+    function drawnLine(starX, starY, endX, endY) {
+        oContext.moveTo(starX, starY);
+        oContext.lineTo(endX, endY);
+        oContext.stroke();
+    }
+    function drawnMaxCircle() {
+        var centerX = oCanvas.width / 2;
+        var centerY = oCanvas.height / 2;
+        var radius = centerX || centerY;
+
+        oContext.beginPath();
+        oContext.fillStyle = "yellow";
+        oContext.arc(centerX, centerY, radius, 0, 2 * Math.PI);
+        oContext.fill();
+        oContext.stroke();
+    }
+</script>
+</html>
